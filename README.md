@@ -1,20 +1,19 @@
-# Mi Portfolio Personal - React
+# My Personal Portfolio - React
 
-Este es un portfolio personal creado con React para mostrar mis habilidades, proyectos y experiencia profesional. El objetivo de este proyecto es proporcionar una plataforma atractiva y funcional para que los visitantes exploren mis trabajos anteriores y se conecten conmigo.
+This is a personal portfolio built with React to showcase my skills, projects, and professional experience. The aim of this project is to provide an engaging and functional platform for visitors to explore my work and connect with me.
 
-## Características
+## Features
 
-- **Diseño Responsivo:** Optimizado para ofrecer una experiencia de usuario fluida en dispositivos de escritorio, tabletas y móviles.
-- **Secciones Principales:** Incluye "Inicio", "Sobre Mí", "Proyectos", "Habilidades" y "Contacto".
-- **Interactividad Mejorada:** Navegación intuitiva y elementos interactivos para una experiencia más enriquecedora.
-- **Tecnologías Modernas:** Utiliza React, React Router y Styled Components para una experiencia de usuario moderna y estilizada.
-- **Fácil Personalización:** Configuración sencilla para añadir o modificar proyectos, habilidades y detalles personales.
+- **Responsive Design:** Optimized for a seamless user experience on desktops, tablets, and mobile devices.
+- **Main Sections:** Includes "Home", "About Me", "Projects", "Skills", and "Contact".
+- **Enhanced Interactivity:** Intuitive navigation and interactive elements for a richer user experience.
+- **Modern Technologies:** Utilizes React, React Router, and Styled Components for a sleek and modern interface.
+- **Easy Customization:** Simple setup to add or update projects, skills, and personal details.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React:** Para la construcción de la interfaz de usuario.
-- **React Router:** Para gestionar la navegación entre secciones.
-- **Styled Components:** Para aplicar estilos CSS-in-JS.
-- **Axios (opcional):** Para la integración con APIs, si se requiere.
-- **Vite:** Para la configuración del entorno de desarrollo y transpilación del código.
-
+- **React:** For building the user interface.
+- **React Router:** For managing navigation between sections.
+- **Styled Components:** For applying CSS-in-JS styles.
+- **Axios (optional):** For API integration if needed.
+- **Vite:** For configuring the development environment and code transpilation.
