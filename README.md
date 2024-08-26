@@ -17,3 +17,23 @@ This is a personal portfolio built with React to showcase my skills, projects, a
 - **Styled Components:** For applying CSS-in-JS styles.
 - **Axios (optional):** For API integration if needed.
 - **Vite:** For configuring the development environment and code transpilation.
+
+
+## Customization
+You can customize various aspects of the project:
+
+- **UI Styling:** Modify the Tailwind CSS configurations in tailwind.config.js and styles in the resources/css directory.
+- **Database Structure:** Adjust the migrations or models in the database/migrations and app/Models directories.
+- **Routes and Controllers:** Customize the logic in routes/web.php and the corresponding controllers in app/Http/Controllers.
+    
+## Contributions
+Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request. Feedback and enhancements are highly appreciated.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+- **Name:** Andrei Chiorian
+- **Email:** contacto@andreiwebdevelopment.es
+- **LinkedIn:** https://www.linkedin.com/in/andrei-chiorian-web-development
+- **GitHub:** https://github.com/Andrei-Chiorian
