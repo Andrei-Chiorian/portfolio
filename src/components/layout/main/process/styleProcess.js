@@ -69,12 +69,25 @@ export const StylesProcess = styled.div`
 
     .list .title h3 {
         font-size: 24px;
-        color: ${({theme}) => theme.text};
+        color: ${({ theme }) => theme.text};
     }
 
-    .list .text p {      
-        color: ${({theme}) => theme.text};
+    .list .text p {
+        color: ${({ theme }) => theme.text};
         line-height: 24px;
+    }
+
+    @media (max-width: 1040px) {
+        .container {
+            padding: 0 20px;
+        }
+        .list ul {
+            margin: 0;
+        }
+        .list ul li {
+        width: 100%;
+        padding-left: 0;
+    }
     }
 
     @media (max-width: 1600px) {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const StylesAtom = styled.div` 
-
+export const StylesAtom = styled.div`
     .atom svg {
         height: 50px;
         width: 50px;
@@ -20,30 +19,30 @@ export const StylesAtom = styled.div`
         z-index: 7;
         position: absolute;
         transform-style: preserve-3d;
-        -webkit-animation: electronAnimation 3s infinite linear;
-        -moz-animation: electronAnimation 3s infinite linear;
-        -ms-animation: electronAnimation 3s infinite linear;
-        -o-animation: electronAnimation 3s infinite linear;
-        animation: electronAnimation 3s infinite ease-in-out;
+        -webkit-animation: electronAnimation 6s infinite linear;
+        -moz-animation: electronAnimation 6s infinite linear;
+        -ms-animation: electronAnimation 6s infinite linear;
+        -o-animation: electronAnimation 6s infinite linear;
+        animation: electronAnimation 6s infinite ease-in-out;
         cursor: pointer;
     }
 
     .orbit:hover {
-        -webkit-animation: spin 0.5s infinite linear;
-        -moz-animation:  spin 0.5s infinite linear;
-        -ms-animation:  spin 0.5s infinite linear;
-        -o-animation:  spin 0.5s infinite linear;
-        animation: spin 0.5s infinite linear;
+        -webkit-animation: spin 1s infinite linear;
+        -moz-animation: spin 1s infinite linear;
+        -ms-animation: spin 1s infinite linear;
+        -o-animation: spin 1s infinite linear;
+        animation: spin 1s infinite linear;
     }
 
     .react {
         top: 100px;
         left: 110px;
-        -webkit-animation: electronAnimation 2s infinite  ease-in-out reverse;
-        -moz-animation: electronAnimation 2s infinite  ease-in-out reverse;
-        -ms-animation: electronAnimation 2s infinite  ease-in-out reverse;
-        -o-animation: electronAnimation 2s infinite  ease-in-out reverse;
-        animation: electronAnimation 2s infinite  ease-in-out reverse;
+        -webkit-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -moz-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -ms-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -o-animation: electronAnimation 5s infinite ease-in-out reverse;
+        animation: electronAnimation 5s infinite ease-in-out reverse;
     }
 
     .javascript {
@@ -64,11 +63,11 @@ export const StylesAtom = styled.div`
     .php {
         top: 220px;
         left: 360px;
-        -webkit-animation: electronAnimation 2s infinite ease-in-out reverse;
-        -moz-animation: electronAnimation 2s infinite ease-in-out reverse;
-        -ms-animation: electronAnimation 2s infinite ease-in-out reverse;
-        -o-animation: electronAnimation 2s infinite ease-in-out reverse;
-        animation: electronAnimation 2s infinite ease-in-out reverse;
+        -webkit-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -moz-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -ms-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -o-animation: electronAnimation 5s infinite ease-in-out reverse;
+        animation: electronAnimation 5s infinite ease-in-out reverse;
     }
 
     .laravel {
@@ -79,11 +78,11 @@ export const StylesAtom = styled.div`
     .flask {
         top: 400px;
         left: 30px;
-        -webkit-animation: electronAnimation 1.5s infinite ease-in-out reverse;
-        -moz-animation: electronAnimation 1.5s infinite ease-in-out reverse;
-        -ms-animation: electronAnimation 1.5s infinite ease-in-out reverse;
-        -o-animation: electronAnimation 1.5s infinite ease-in-out reverse;
-        animation: electronAnimation 1.5s infinite ease-in-out reverse;
+        -webkit-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -moz-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -ms-animation: electronAnimation 5s infinite ease-in-out reverse;
+        -o-animation: electronAnimation 5s infinite ease-in-out reverse;
+        animation: electronAnimation 5s infinite ease-in-out reverse;
     }
 
     #nucleus {
@@ -203,11 +202,11 @@ export const StylesAtom = styled.div`
         }
     }
 
-    @media (max-width: 688px) {        
+    @media (max-width: 688px) {
         .atom svg {
             height: 40px;
             width: 40px;
-        }       
+        }
     }
 
     @media (max-width: 1040px) {
@@ -217,19 +216,16 @@ export const StylesAtom = styled.div`
         }
         .atom .orbit {
             display: none;
-        }        
+        }
         .atom svg {
             height: 40px;
             width: 40px;
-        }        
+        }
     }
 
-    
-
-    @media (max-width: 1600px) {   
-       
+    @media (max-width: 1600px) {
         .atom img {
-        width: 450px;
-    }   
+            width: 450px;
+        }
     }
 `;

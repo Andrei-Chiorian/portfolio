@@ -1,16 +1,21 @@
+import { useMemo } from 'react';
 import { Flask, Javascript, Laravel, Php, Python, React, Tensor } from '../../../../../constants/icons.jsx'
 import { StylesAtom } from './stylesAtom';
 
 
 
 const Atom = () => {
+    const meImg = 'http://localhost:5173/' + 'img/avatar.png';
+
+    
+    const memoizedImage = useMemo(() => meImg, [meImg]);
 
 
     return (
         <StylesAtom>
             <div className="image atom">
                 <div id="nucleus">
-                    <img src="/img/avatar.png" alt="" />
+                    <img src={memoizedImage} alt="" />
                 </div>
                 <div className="orbit python">
                     <span className="skills anim_moveBottom">

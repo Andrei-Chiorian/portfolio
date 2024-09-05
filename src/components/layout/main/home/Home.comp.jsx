@@ -6,7 +6,7 @@ import Atom from "./atom/Atom.jsx";
 
 const HomeComp = () => {
     const currentTheme = useTheme().theme();
-
+    
     return (
         <StylesHomeComp theme={currentTheme}>
             <div className="background">
