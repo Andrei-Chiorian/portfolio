@@ -211,12 +211,12 @@ export const StylesHomeComp = styled.div`
     }
 
     .orbit:nth-child(6) {
-        transform: rotateY(-290deg) rotateX(-5deg);
+        transform: rotateY(-100deg) rotateX(-5deg);
         animation-delay: -2s;
     }
 
     .orbit:nth-child(7) {
-        transform: rotateY(220deg) rotateX(20deg);
+        transform: rotateY(120deg) rotateX(20deg);
     }
     
 
@@ -361,9 +361,9 @@ export const StylesHomeComp = styled.div`
     }
 
     @media (max-width: 688px) {
-        /* .atom .orbit{
+        .atom .orbit{
             display: none;
-        } */
+        }
         .atom svg {
             height: 40px;
             width: 40px;
