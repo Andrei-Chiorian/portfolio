@@ -11,7 +11,7 @@ const About = () => {
     const currentYear = new Date().getFullYear();
     const yearsWorking = currentYear - 2022
     const currentTheme = useTheme().theme();
-    const meImg = 'http://localhost:5173/' + 'img/me.png';
+    const meImg = 'https://andreiwebdevelopment.es/' + 'img/me.png';
 
     
     const memoizedImg = useMemo(() => meImg, [meImg]);

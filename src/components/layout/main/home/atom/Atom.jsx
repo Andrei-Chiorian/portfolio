@@ -5,7 +5,7 @@ import { StylesAtom } from './stylesAtom';
 
 
 const Atom = () => {
-    const meImg = 'http://localhost:5173/' + 'img/avatar.png';
+    const meImg = 'https://andreiwebdevelopment.es/' + 'img/avatar.png';
 
     
     const memoizedImage = useMemo(() => meImg, [meImg]);
