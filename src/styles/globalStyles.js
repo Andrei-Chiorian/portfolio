@@ -12,6 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 html {
   scrollbar-width: thin;
   scroll-behavior: smooth;
+  max-width: 100vw !important;
+  overflow-x: hidden;
 }
 
 *{

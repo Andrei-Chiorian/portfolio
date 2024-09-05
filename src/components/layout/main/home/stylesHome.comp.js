@@ -121,23 +121,78 @@ export const StylesHomeComp = styled.div`
     }
 
     .atom {
-        margin-top: 10%;
         position: relative;
         display: inline-block;
     }
 
-    .orbit,
-    .electron,
-    .orbitTrain,
-    .electronTrain {
+    .orbit {
+        z-index: 7;
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
+        transform-style: preserve-3d;
+        -webkit-animation: electronAnimation 3s infinite linear;
+        -moz-animation: electronAnimation 3s infinite linear;
+        -ms-animation: electronAnimation 3s infinite linear;
+        -o-animation: electronAnimation 3s infinite linear;
+        animation: electronAnimation 3s infinite ease-in-out;
+        cursor: pointer;
+    }
+
+    .orbit:hover {
+        -webkit-animation: spin 0.5s infinite linear;
+        -moz-animation:  spin 0.5s infinite linear;
+        -ms-animation:  spin 0.5s infinite linear;
+        -o-animation:  spin 0.5s infinite linear;
+        animation: spin 0.5s infinite linear;
+    }
+
+    .react {
+        top: 100px;
+        left: 110px;
+        -webkit-animation: electronAnimation 2s infinite  ease-in-out reverse;
+        -moz-animation: electronAnimation 2s infinite  ease-in-out reverse;
+        -ms-animation: electronAnimation 2s infinite  ease-in-out reverse;
+        -o-animation: electronAnimation 2s infinite  ease-in-out reverse;
+        animation: electronAnimation 2s infinite  ease-in-out reverse;
+    }
+
+    .javascript {
+        top: 410px;
+        left: 400px;
+    }
+
+    .python {
+        top: 100px;
+        left: 400px;
+    }
+
+    .tensor {
+        top: 400px;
+        left: 140px;
+    }
+
+    .php {
+        top: 220px;
+        left: 360px;
+        -webkit-animation: electronAnimation 2s infinite ease-in-out reverse;
+        -moz-animation: electronAnimation 2s infinite ease-in-out reverse;
+        -ms-animation: electronAnimation 2s infinite ease-in-out reverse;
+        -o-animation: electronAnimation 2s infinite ease-in-out reverse;
+        animation: electronAnimation 2s infinite ease-in-out reverse;
+    }
+
+    .laravel {
+        top: 250px;
+        left: 60px;
+    }
+
+    .flask {
+        top: 400px;
+        left: 30px;
+        -webkit-animation: electronAnimation 1.5s infinite ease-in-out reverse;
+        -moz-animation: electronAnimation 1.5s infinite ease-in-out reverse;
+        -ms-animation: electronAnimation 1.5s infinite ease-in-out reverse;
+        -o-animation: electronAnimation 1.5s infinite ease-in-out reverse;
+        animation: electronAnimation 1.5s infinite ease-in-out reverse;
     }
 
     #nucleus {
@@ -148,195 +203,112 @@ export const StylesHomeComp = styled.div`
     }
 
     #nucleus img {
-        height: 400px;
-        width: 340px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         z-index: 4;
     }
 
-    .orbit {
-        z-index: 2;
-        width: 400px;
-        height: 400px;
-        border: 0;
-        transform-style: preserve-3d;
-        -webkit-animation: z-orbit 2s infinite linear;
-        -moz-animation: z-orbit 2s infinite linear;
-        -ms-animation: z-orbit 2s infinite linear;
-        -o-animation: z-orbit 2s infinite linear;
-        animation: z-orbit 2s infinite linear;
-    }
-
-    .orbit .electron {
-        position: relative;
-        top: 140px;
-        width: 50px;
-        height: 50px;
-        transform: translateX(80px);
-        -webkit-animation: electronAnimation 2s infinite linear;
-        -moz-animation: electronAnimation 2s infinite linear;
-        -ms-animation: electronAnimation 2s infinite linear;
-        -o-animation: electronAnimation 2s infinite linear;
-        animation: electronAnimation 2s infinite linear;
-    }
-
-    .orbit:nth-child(4) {
-        transform: rotateY(65deg) rotateX(5deg);
-
-        animation-delay: -1s;
-    }
-
-    .orbit:nth-child(4) .electron {
-        animation-delay: -1s;
-    }
-
-    .orbit:nth-child(2) {
-        transform: rotateY(50deg) rotateX(-20deg);
-        animation-delay: -1s;
-        animation-duration: 1s;        
-    }
-
-    .orbit:nth-child(2) .electron {
-        animation-duration: 1s;
-    }
-
-    .orbit:nth-child(3) {
-        transform: rotateY(65deg) rotateX(54deg);
-        animation-delay: -2s;
-    }
-
-    .orbit:nth-child(5) {
-        transform: rotateY(85deg) rotateX(30deg);
-    }
-
-    .orbit:nth-child(6) {
-        transform: rotateY(-100deg) rotateX(-5deg);
-        animation-delay: -2s;
-    }
-
-    .orbit:nth-child(7) {
-        transform: rotateY(120deg) rotateX(20deg);
-    }
-    
-
     @-webkit-keyframes electronAnimation {
         0% {
-            transform: rotateZ(0deg) translateX(480px) rotateZ(0deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
-
+        50% {
+            transform: translateY(10px) translateX(-30px) rotateZ(140deg);
+        }
         100% {
-            transform: rotateZ(360deg) translateX(180px) rotateZ(-360deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
     }
 
     @-moz-keyframes electronAnimation {
         0% {
-            transform: rotateZ(0deg) translateX(180px) rotateZ(0deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
-
+        50% {
+            transform: translateY(10px) translateX(-30px) rotateZ(140deg);
+        }
         100% {
-            transform: rotateZ(360deg) translateX(180px) rotateZ(-360deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
     }
 
     @-ms-keyframes electronAnimation {
         0% {
-            transform: rotateZ(0deg) translateX(180px) rotateZ(0deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
-
+        50% {
+            transform: translateY(10px) translateX(-30px) rotateZ(140deg);
+        }
         100% {
-            transform: rotateZ(360deg) translateX(180px) rotateZ(-360deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
     }
 
     @-o-keyframes electronAnimation {
         0% {
-            transform: rotateZ(0deg) translateX(180px) rotateZ(0deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
-
+        50% {
+            transform: translateY(10px) translateX(-30px) rotateZ(140deg);
+        }
         100% {
-            transform: rotateZ(360deg) translateX(180px) rotateZ(-360deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
     }
 
     @keyframes electronAnimation {
         0% {
-            transform: rotateZ(0deg) translateX(150px) rotateZ(0deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
-
+        50% {
+            transform: translateY(10px) translateX(-30px) rotateZ(140deg);
+        }
         100% {
-            transform: rotateZ(360deg) translateX(180px) rotateZ(-360deg)
-                rotateY(-65deg);
+            transform: translateY(-10px) translateX(30px) rotateZ(-140deg);
         }
     }
 
-    @-webkit-keyframes z-orbit {
+    @-webkit-keyframes spin {
         0% {
-            z-index: 2;
-        }
-        50% {
-            z-index: 6;
+            transform: rotateZ(0deg);
         }
         100% {
-            z-index: 2;
+            transform: rotateZ(360deg);
         }
     }
 
-    @-moz-keyframes z-orbit {
+    @-moz-keyframes spin {
         0% {
-            z-index: 2;
-        }
-        50% {
-            z-index: 6;
+            transform: rotateZ(0deg);
         }
         100% {
-            z-index: 2;
+            transform: rotateZ(360deg);
         }
     }
 
-    @-ms-keyframes z-orbit {
+    @-ms-keyframes spin {
         0% {
-            z-index: 2;
-        }
-        50% {
-            z-index: 6;
+            transform: rotateZ(0deg);
         }
         100% {
-            z-index: 2;
+            transform: rotateZ(360deg);
         }
     }
 
-    @-o-keyframes z-orbit {
+    @-o-keyframes spin {
         0% {
-            z-index: 2;
-        }
-        50% {
-            z-index: 6;
+            transform: rotateZ(0deg);
         }
         100% {
-            z-index: 2;
+            transform: rotateZ(360deg);
         }
     }
 
-    @keyframes z-orbit {
+    @keyframes spin {
         0% {
-            z-index: 2;
-        }
-        50% {
-            z-index: 6;
+            transform: rotateZ(0deg);
         }
         100% {
-            z-index: 2;
+            transform: rotateZ(360deg);
         }
     }
 
@@ -360,24 +332,25 @@ export const StylesHomeComp = styled.div`
         }
     }
 
-    @media (max-width: 688px) {
-        .atom .orbit{
-            display: none;
-        }
+    @media (max-width: 688px) {        
         .atom svg {
             height: 40px;
             width: 40px;
         }
-        #nucleus img {
-            height: 260px;
-            width: 220px;
-        }
+        
         .name h3 {
-            font-size: 45px !important;       
+            font-size: 45px !important;
         }
     }
 
     @media (max-width: 1040px) {
+        #nucleus img {
+            height: 360px !important;
+            width: 320px !important;
+        }
+        .atom .orbit {
+            display: none;
+        }
         .home-info-container {
             padding: 0 20px;
         }
@@ -399,15 +372,16 @@ export const StylesHomeComp = styled.div`
             height: 260px;
             width: 220px;
         }
-        
     }
+
+    
 
     @media (max-width: 1600px) {
         .home-info-container {
             max-width: 1170px;
         }
         .avatar img {
-            max-height: 400px;
+            transform: scale(0.8);
         }
         .hello h3 {
             font-size: 25px;
