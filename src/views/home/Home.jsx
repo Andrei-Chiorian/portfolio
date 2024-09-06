@@ -1,10 +1,17 @@
-import About from "../../components/layout/main/about/About";
-import HomeComp from "../../components/layout/main/home/Home.comp";
-import Process from "../../components/layout/main/process/Process";
-import Projects from "../../components/layout/main/projects/Projects";
+// import About from "../../components/layout/main/about/About";
+// import HomeComp from "../../components/layout/main/home/Home.comp";
+// import Process from "../../components/layout/main/process/Process";
+// import Projects from "../../components/layout/main/projects/Projects";
 import { StylesHome } from "./stylesHome"
+import { lazy } from 'react';
 
+const About = lazy(() => import('../../components/layout/main/about/About'));
 
+const HomeComp = lazy(() => import('../../components/layout/main/home/Home.comp'));
+
+const Process = lazy(() => import('../../components/layout/main/process/Process'));
+
+const Projects = lazy(() => import('../../components/layout/main/projects/Projects.jsx'));
 
 const Home = () => {
 
@@ -19,11 +26,11 @@ const Home = () => {
                 <Process />
             </section>
 
-            <section id="about">
+            <section >
                 <About />
             </section>
 
-            <section id="projects">
+            <section>
                <Projects/>
             </section>
 

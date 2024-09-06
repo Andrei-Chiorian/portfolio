@@ -76,13 +76,14 @@ export const StylesProjects = styled.div`
         display: inline-block;
     }
 
-    .filter ul li a {
+    .filter ul li div {
         text-decoration: none;
         color: ${({ theme }) => theme.text} !important;
         line-height: 25px;
+        cursor: pointer;
     }
 
-    .filter ul li a:hover {
+    .filter ul li div:hover {
         color: #f75023 !important;
     }
 
@@ -107,7 +108,6 @@ export const StylesProjects = styled.div`
     .project-list {
         margin-top: 30px;
         width: 100%;
-        height: auto;
         text-align: center;
         padding: 78px 0 56px 0;
     }
@@ -116,81 +116,43 @@ export const StylesProjects = styled.div`
         width: 100%;
     }
 
-    .grid-container {
-        display: grid;
-        text-align: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 15px 15px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "g1 g2 g3"
-            "g1 g5 g3"
-            "g4 g5 g6";
-        transition: all 2s ease;
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
     }
 
-    .g2:hover,
-    .g4:hover,
-    .g6:hover {
-        transform: scaleY(1.4); 
+    .figure-not-visible {
+        display: none !important;
     }
 
-    .g2:hover ~ .g5,
-    .g4:hover ~ .g1,
-    .g6:hover ~ .g3 {
-        height: 300px;
-    }
-
-    .g1,
-    .g2,
-    .g3,
-    .g4,
-    .g5,
-    .g6 {
-        transition: all 0.5s ease;
-    }
-    .g4 {
-        grid-area: g4;
-    }
-
-    .g1 {
-        grid-area: g1;
-    }
-
-    .g2 {
-        grid-area: g2;
-    }
-
-    .g3 {
-        grid-area: g3;
-    }
-
-    .g5 {
-        grid-area: g5;
-    }
-
-    .g6 {
-        grid-area: g6;
+    .c1,
+    .c2,
+    .c3 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .projects-list figure {
+        max-height: 60%;
         position: relative;
-        min-height: 250px;
-        height: 100%;
-        max-height: 600px;
         cursor: pointer;
         width: 300px;
         overflow: hidden;
         border-radius: 25px;
-        box-shadow: 0px 5px 15px whitesmoke;
+        box-shadow: 0px 0px 5px 2px whitesmoke;
+        display: grid;
+        background-color: white !important;
     }
 
     .projects-list figure img {
         width: 100%;
-        height: 100%;
+        margin: auto;
         transition: all 400ms ease-out;
         will-change: transform;
+        overflow: hidden;
     }
     .projects-list figure .capa {
         position: absolute;
@@ -233,11 +195,51 @@ export const StylesProjects = styled.div`
         margin: auto;
     }
 
-    @media (max-width: 688px) {
+    @media (min-width: 1040px) {
+        .flex-container {
+            height: 800px;
+        }
+        .c1 figure:nth-of-type(1),
+        .c3 figure:nth-of-type(1) {
+            transition: all 0.3s ease;
+            min-height: 60%;
+        }
+
+        .c1 figure:nth-of-type(2),
+        .c3 figure:nth-of-type(2) {
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        .c2 figure:nth-of-type(1) {
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        .c2 figure:nth-of-type(2) {
+            transition: all 0.3s ease;
+            min-height: 60%;
+        }
+
+        .hover-effect {
+            min-height: 35% !important;
+        }
+    }
+
+    @media (max-width: 1040px) {
+        .c1-1,
+        .c1-2,
+        .c2-1,
+        .c2-2,
+        .c3-1,
+        .c3-2 {
+            height: 300px;
+        }
         .flex-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             width: 100%;
         }
     }

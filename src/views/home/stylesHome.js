@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StylesHome = styled.div`
     .home-section {
         width: 100%;
-        height: auto;
+        height: fit-content;
         clear: both;
         float: left;
     }

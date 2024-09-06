@@ -5,17 +5,14 @@ import { StylesAtom } from './stylesAtom';
 
 
 const Atom = () => {
-    const meImg = 'https://andreiwebdevelopment.es/' + 'img/avatar.png';
-
     
-    const memoizedImage = useMemo(() => meImg, [meImg]);
-
+    const meImg = useMemo(() => '/img/avatar.png', []);   
 
     return (
         <StylesAtom>
             <div className="image atom">
                 <div id="nucleus">
-                    <img src={memoizedImage} alt="" />
+                    <img src={meImg} alt="" />
                 </div>
                 <div className="orbit python">
                     <span className="skills anim_moveBottom">

@@ -36,7 +36,7 @@ const Contact = (props) => {
     }
     return (
         <StylesContact theme={currentTheme}>
-            <form name="contact" method="POST">
+            <form name="contact" method="POST" id="contact">
                 <div className="footer-section-header">
                     <div className="title-container mobile-position-contact" onClick={() => changeState()}>
                         <div className="titles">

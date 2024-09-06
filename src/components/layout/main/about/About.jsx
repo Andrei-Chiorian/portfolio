@@ -11,18 +11,18 @@ const About = () => {
     const currentYear = new Date().getFullYear();
     const yearsWorking = currentYear - 2022
     const currentTheme = useTheme().theme();
-    const meImg = 'https://andreiwebdevelopment.es/' + 'img/me.png';
+    const meImg = useMemo(() => '/img/me.png', []);   
 
     
-    const memoizedImg = useMemo(() => meImg, [meImg]);
+    
     return (
         <StylesAbout theme={currentTheme}>
-            <div className="about">
+            <div className="about" id="about">
                 <div className="container">
                     <div className="wrapper">
                         <div className="left">
                             <div className="image">
-                                <img src={memoizedImg} alt="image about" />
+                                <img src={meImg} alt="image about" />
                                 <div className="numbers year">
                                     <div className="wrapper">
                                         <h3>
@@ -98,7 +98,7 @@ const About = () => {
                                 triggerOnce
                             >
                                 <div className="button">
-                                    <a className="anchor" href="">
+                                    <a className="anchor" href="#contact">
                                         <span>¡Vamos a construir algo increíble juntos!</span>
                                     </a>
                                 </div>
