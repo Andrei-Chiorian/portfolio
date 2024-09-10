@@ -42,7 +42,7 @@ const Menu = () => {
         <li><a href="#skills" className={activeSection === 'skills' ? 'active-section' : ''}>Habilidades</a></li>
         <li><a href="#testimonials" className={activeSection === 'testimonials' ? 'active-section' : ''}>Testimonios</a></li>       
         <li className="download-cv">
-          <a href="./img/logo-new.png" download>
+          <a href="./doc/CV_Andrei-Chiorian.pdf" download>
             <span>Descargar CV</span>
           </a>
         </li>
