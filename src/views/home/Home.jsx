@@ -3,6 +3,7 @@
 // import Process from "../../components/layout/main/process/Process";
 // import Projects from "../../components/layout/main/projects/Projects";
 import Skills from "../../components/layout/main/skills/Skills.jsx";
+import Testimonials from "../../components/layout/main/testimonials/Testimonials.jsx";
 import { StylesHome } from "./stylesHome"
 import { lazy } from 'react';
 
@@ -35,12 +36,12 @@ const Home = () => {
                <Projects/>
             </section>
 
-            <section id="skills">
+            <section>
                 <Skills/>              
             </section>
 
             <section id="testimonials">
-               
+                <Testimonials/>  
             </section>
 
 

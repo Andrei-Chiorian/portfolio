@@ -18,6 +18,7 @@ export const StylesProjects = styled.div`
         padding: 0 40px;
         position: relative;
         clear: both;
+        z-index: 2;
     }
 
     .brush_1 {
@@ -29,7 +30,7 @@ export const StylesProjects = styled.div`
     .brush_2 {
         position: absolute;
         bottom: -120px;
-        right: 60px;
+        right: 60px;       
     }
 
     .main-title {
@@ -109,7 +110,7 @@ export const StylesProjects = styled.div`
         margin-top: 30px;
         width: 100%;
         text-align: center;
-        padding: 78px 0 56px 0;
+        padding: 78px 0 56px 0;       
     }
 
     .fade-projects {
@@ -120,7 +121,7 @@ export const StylesProjects = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        gap: 30px;
+        gap: 30px;       
     }
 
     .figure-not-visible {

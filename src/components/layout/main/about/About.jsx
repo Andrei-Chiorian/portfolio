@@ -10,6 +10,7 @@ const About = () => {
 
     const currentYear = new Date().getFullYear();
     const yearsWorking = currentYear - 2022
+    const yearsExperience = currentYear - 2020
     const currentTheme = useTheme().theme();
     const meImg = useMemo(() => '/img/me.png', []);   
 
@@ -31,19 +32,19 @@ const About = () => {
                                         <span className="name">
                                             Años
                                             <br />
-                                            Trabajando
+                                            trabajando
                                         </span>
                                     </div>
                                 </div>
                                 <div className="numbers project">
                                     <div className="wrapper">
                                         <h3 style={{ display: 'flex' }}>
-                                            100%
+                                            {yearsExperience}
                                         </h3>
                                         <span className="name">
-                                            Motivación
+                                            Años de
                                             <br />
-                                            Disciplina
+                                            experiencia
                                         </span>
                                     </div>
                                 </div>
