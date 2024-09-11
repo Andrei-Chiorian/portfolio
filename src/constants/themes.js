@@ -40,7 +40,7 @@ export const Dark = {
    // Structure
     bgColorFrom: '#0c4a6e',
     bgColorTo: '#1e1b4b',
-    text: '#e2e2e2',
+    text: '#acacac',
     footerColor: 'rgba(30, 27, 75 ,0.1)', //Footer background
     footerText: '#c9c9c9', //Footer text color  
     headerBg: '#1A2653',

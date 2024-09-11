@@ -23,17 +23,14 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale; 
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 .titles{
     font-family: "Radio Canada Big", sans-serif !important;
     font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.5em;
     color: ${(props) => props.theme.titles} !important;
     user-select: none;
     -webkit-user-select: none;  
@@ -105,8 +102,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;   
-    padding: 0;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 20px;
     margin: 0;
     background: rgba(0,0,0,0.2);
     backdrop-filter: blur(5px);

@@ -9,11 +9,13 @@ const Menu = () => {
 
 
     useEffect(() => {
-        const sections = document.querySelectorAll('section');
-        console.log(sections)
+        const ids = ['home', 'about', 'projects', 'skills', 'testimonials'];
+        const sections = ids.map(id => document.getElementById(id));
+
+
         const options = {
             rootMargin: '0px',
-            threshold: 0.5
+            threshold: 0.3
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -34,14 +36,15 @@ const Menu = () => {
     return (
         <StylesMenu theme={currentTheme}>
             <ul>
-                <li><a href="#home" className={activeSection === 'home' ? 'active-section' : ''}>Home</a></li>
-                <li><a href="#about" className={activeSection === 'about' ? 'active-section' : ''}>Sobre mi</a></li>
-                <li><a href="#projects" className={activeSection === 'projects' ? 'active-section' : ''}>Proyectos</a></li>
-                <li><a href="#skills" className={activeSection === 'skills' ? 'active-section' : ''}>Habilidades</a></li>
-                <li><a href="#testimonials" className={activeSection === 'testimonials' ? 'active-section' : ''}>Testimonios</a></li>
+                <li><a href="#home" className={`titles ${activeSection === 'home' ? 'active-section' : ''}`}>Home</a></li>
+                <li><a href="#about" className={`titles ${activeSection === 'about' ? 'active-section' : ''}`}>Sobre mi</a></li>
+                <li><a href="#projects" className={`titles ${activeSection === 'projects' ? 'active-section' : ''}`}>Proyectos</a></li>
+                <li><a href="#skills" className={`titles ${activeSection === 'skills' ? 'active-section' : ''}`}>Habilidades</a></li>
+                <li><a href="#testimonials" className={`titles ${activeSection === 'testimonials' ? 'active-section' : ''}`}>Testimonios</a></li>
+                <li className="menu-item"><a href="#contact" className={`titles ${activeSection === 'contact' ? 'active-section' : ''}`}>Contacto</a></li>
                 <li className="download-cv">
                     <a href="./doc/CV_Andrei-Chiorian.pdf" download>
-                        <span>Descargar CV</span>
+                        <span className="titles">Descargar CV</span>
                     </a>
                 </li>
             </ul>

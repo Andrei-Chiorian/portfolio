@@ -13,7 +13,7 @@ const Projects = () => {
 
     const meImg1 = useMemo(() => 'img/sia.jpeg', []);
     const meImg2 = useMemo(() => 'img/mokshabook.png', []);
-    const meImg3 = useMemo(() => 'img/roommates.jpg', []);
+    const meImg3 = useMemo(() => 'img/roommates.png', []);
     const meImg4 = useMemo(() => 'img/shopping.png', []);
     const meImg5 = useMemo(() => 'img/terrarium.jpg', []);
     const meImg6 = useMemo(() => 'img/cloudlib.png', []);
@@ -26,19 +26,19 @@ const Projects = () => {
             <div className="container" id="projects">
                 <div className="main-title">
                     <span>Proyectos</span>
-                    <h3>Algunos de mis trabajos</h3>
+                    <h3 className="titles">Algunos de mis trabajos</h3>
                     <p>
                         Descubre los proyectos en los que he puesto pasión, creatividad y líneas de código.
                     </p>
                 </div>
                 <div className="filter">
                     <ul>
-                        <li><div className={`c-pointer ${groupSelected == 'all' ? 'current' : ''}`} onClick={() => setGroupSelected('all')}>All</div></li>
-                        <li><div className={`c-pointer ${groupSelected == 'react' ? 'current' : ''}`} onClick={() => setGroupSelected('react')}>React</div></li>
-                        <li><div className={`c-pointer ${groupSelected == 'reactNative' ? 'current' : ''}`} onClick={() => setGroupSelected('reactNative')}>React Native</div></li>
-                        <li><div className={`c-pointer ${groupSelected == 'python' ? 'current' : ''}`} onClick={() => setGroupSelected('python')}>Python</div></li>
-                        <li><div className={`c-pointer ${groupSelected == 'php' ? 'current' : ''}`} onClick={() => setGroupSelected('php')}>Php</div></li>
-                        <li><div className={`c-pointer ${groupSelected == 'arduino' ? 'current' : ''}`} onClick={() => setGroupSelected('arduino')}>Arduino</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'all' ? 'current' : ''}`} onClick={() => setGroupSelected('all')}>All</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'react' ? 'current' : ''}`} onClick={() => setGroupSelected('react')}>React</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'reactNative' ? 'current' : ''}`} onClick={() => setGroupSelected('reactNative')}>React Native</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'python' ? 'current' : ''}`} onClick={() => setGroupSelected('python')}>Python</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'php' ? 'current' : ''}`} onClick={() => setGroupSelected('php')}>Php</div></li>
+                        <li><div className={`c-pointer titles ${groupSelected == 'arduino' ? 'current' : ''}`} onClick={() => setGroupSelected('arduino')}>Arduino</div></li>
                     </ul>
                 </div>
 
@@ -76,7 +76,7 @@ const Projects = () => {
                                 <div className="capa">
                                     <a href="https://github.com/fumooworking" target="_blank">
                                         <h3>RoomMates</h3>
-                                        <p>Aplicación de Gestión de Inquilinos en Colaboración con <a href="https://eduardoneila.es/" target="_blank">Eduardo Neila</a>. Actualmente en desarrollo, esta aplicación está diseñada para facilitar la gestión de inquilinos, permitiendo el registro de pagos, la división de gastos entre los miembros, la gestión de tareas comunes y la conexión entre diferentes hogares. Desarrollada con React Native para el frontend, Python Flask para la API REST, y MySQL como gestor de bases de datos, ofrece una solución integral y eficiente para la administración compartida de viviendas.</p>
+                                        <p>Aplicación de Gestión de Inquilinos en Colaboración con Eduardo Neila. Actualmente en desarrollo, esta aplicación está diseñada para facilitar la gestión de inquilinos, permitiendo el registro de pagos, la división de gastos entre los miembros, la gestión de tareas comunes y la conexión entre diferentes hogares. Desarrollada con React Native para el frontend, Python Flask para la API REST, y MySQL como gestor de bases de datos, ofrece una solución integral y eficiente para la administración compartida de viviendas.</p>
                                         <span>Pulsa otra vez</span>
                                     </a>
                                 </div>

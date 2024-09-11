@@ -68,8 +68,7 @@ export const StylesProcess = styled.div`
     }
 
     .list .title h3 {
-        font-size: 24px;
-        color: ${({ theme }) => theme.text};
+        font-size: 24px;        
     }
 
     .list .text p {

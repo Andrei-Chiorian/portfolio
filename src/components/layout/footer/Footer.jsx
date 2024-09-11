@@ -13,9 +13,9 @@ const Footer = () => {
 
     const currentTheme = useTheme().theme();
 
-    const [showInfoEnding, setShowInfoEnding] = useState(true)
+    const [showInfoEnding, setShowInfoEnding] = useState(false)
     const [showInfoLocation, setShowInfoLocation] = useState(false)
-    const [showInfoContact, setShowInfoContact] = useState(false)
+    const [showInfoContact, setShowInfoContact] = useState(true)
 
     return(
         <StylesFooter theme={currentTheme}>            

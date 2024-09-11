@@ -40,7 +40,7 @@ export const StylesHomeComp = styled.div`
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 60px;
+        bottom: 5px;
         z-index: 5;
     }
 
@@ -93,8 +93,7 @@ export const StylesHomeComp = styled.div`
         font-size: 18px !important;
     }
 
-    .job p {
-        color: ${({ theme }) => theme.text} !important;
+    .job p {       
         font-size: 17px !important;
         color: #000;
         font-weight: 500;
@@ -104,8 +103,7 @@ export const StylesHomeComp = styled.div`
         margin-bottom: 42px;
     }
 
-    .text p {
-        color: ${({ theme }) => theme.text} !important;
+    .text p {       
         font-size: 17px !important;
         letter-spacing: 0.7px;
     }

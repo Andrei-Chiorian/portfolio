@@ -19,10 +19,10 @@ const HomeComp = () => {
                             <h3 className="orangeText">Hola, me llamo</h3>
                         </div>
                         <div className="name">
-                            <h3>Andrei Chiorian</h3>
+                            <h3 className="titles">Andrei Chiorian</h3>
                         </div>
                         <div className="job">
-                            <p>
+                            <p className="titles">
                                 Un
                                 <span className="greenText"> Full Stack Developer </span>
                                 De
@@ -30,8 +30,8 @@ const HomeComp = () => {
                             </p>
                         </div>
                         <div className="text">
-                            <p>
-                                Desarrollador capaz de convertir café en código y errores en soluciones, siempre con una línea de código a la vez.
+                            <p className="titles">
+                                Puedo Escribir Código Tan Rápido Como Tú Cambias De Idea
                             </p>
 
                         </div>

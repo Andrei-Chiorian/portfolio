@@ -47,8 +47,7 @@ export const StylesProjects = styled.div`
         margin-bottom: 6px;
     }
 
-    .main-title h3 {
-        color: ${({ theme }) => theme.text} !important;
+    .main-title h3 {        
         font-size: 48px;
         line-height: 1.25;
         margin-bottom: 23px;
@@ -78,8 +77,7 @@ export const StylesProjects = styled.div`
     }
 
     .filter ul li div {
-        text-decoration: none;
-        color: ${({ theme }) => theme.text} !important;
+        text-decoration: none;        
         line-height: 25px;
         cursor: pointer;
     }

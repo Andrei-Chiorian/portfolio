@@ -126,8 +126,7 @@ export const StylesTestimonials = styled.div`
     }
 
     .in .detail h3 {
-        font-size: 24px;
-        color: ${({ theme }) => theme.text};
+        font-size: 24px;        
         margin-bottom: 10px;
     }
 

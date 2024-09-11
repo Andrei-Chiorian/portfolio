@@ -9,12 +9,10 @@ import { useTheme } from "../../../contexts/themeContext";
 function TextAreaInput(props) {
 
     const currentTheme = useTheme().theme()
-
-    const [inputFocused, setInputFocused] = useState(false);
+    
     const textAreaRef = useRef(null);
 
-    const uId = useId();
-
+    const uId = useId();  
 
 
     //* -hasValue y -hasConfirmValue se usan para comprobar si el input contiene algun valor, dependiendo si tiene o no se cabiaran el color del border a rojo o verde segun la validación.
@@ -76,11 +74,16 @@ function TextAreaInput(props) {
         }
     }, [props.reset])
 
+    useEffect(()=> {
+       console.log(textAreaRef)
+    }, [textAreaRef])
+
+    
     return (
         <StylesTextAreaInput theme={currentTheme}>
             <div className="formInput-container" style={containerStyle}>
 
-                <textarea name={props.name || 'default'+ Math.floor(Math.random() * 90) + 10} id={ props.id || uId } placeholder=" " className={isMatch('input') + " " + props.inputClass + " form-input-input-own"}
+                <textarea name={props.name || 'default'+ Math.floor(Math.random() * 90) + 10} id={ props.id || uId } placeholder={props.placeholder || " "} className={isMatch('input') + " " + props.inputClass + " form-input-input-own"}
                 onChange={props.onChange 
                 ? (e) => {
                     props.onChange(e.target.value);
@@ -89,15 +92,16 @@ function TextAreaInput(props) {
                 :  (e) => handleHasValue(e.target.value)
                 }                
                 ref={textAreaRef}
-                defaultValue={props.defaultV}
-                onFocus={() => setInputFocused(true)} 
-                onBlur={() => setInputFocused(false)}
-                maxLength={props.maxLength}
+                defaultValue={props.defaultV}               
+                maxLength={props.maxLength}                
                 />
 
                 <label htmlFor={ props.id || uId } style={labelStyle} className={`${hasValue ? 'hasValue' : '' } ${isMatch('label')} ${props.labelClass} form-input-label-own`}>
                     {props.required && <span style={{color: 'red'}}>*</span>}{props.label ? props.label : "Default label"}
-                </label>                          
+                </label>
+                <div className="counter" id="charCount" style={{textAlign: 'right', fontSize: '13px'}}>
+                    { (textAreaRef.current ? textAreaRef.current.value.length : 0) + '/' + props.maxLength }
+                </div>                          
             </div>          
         </StylesTextAreaInput>
 

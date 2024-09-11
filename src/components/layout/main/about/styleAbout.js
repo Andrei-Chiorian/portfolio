@@ -6,6 +6,8 @@ export const StylesAbout = styled.div`
     clear: both;
     float: left;
 
+    
+
     .about {
         width: 100%;
         height: auto;
@@ -114,8 +116,7 @@ export const StylesAbout = styled.div`
     .right .title h3 {
         font-size: 48px;
         max-width: 90%;
-        line-height: 1.25;
-        color: ${({ theme }) => theme.text} !important;
+        line-height: 1.25;        
     }
     .right .text {
         margin-bottom: 47px;

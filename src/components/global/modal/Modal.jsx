@@ -22,7 +22,7 @@ const Modal = (props) => {
         <ModalStyles theme={currentTheme}>
             <div className="modal__header">
                 <div className="cross__close" onClick={handleClose}>
-                    <icon.iconCloseModal />
+                    <icon.iconCloseModal size={25}/>
                 </div>
 
                 <div className="modal__body">

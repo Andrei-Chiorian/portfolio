@@ -2,7 +2,7 @@ import { useTheme } from "../../../../contexts/themeContext";
 import { StylesLocation } from "./stylesLocation"
 import { icon } from '../../../../constants/icons'
 import { toast } from 'sonner'
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Modal from "../../../global/modal/Modal";
 import LocationMaps from "../modalsContent/LocationMaps.modal";
 

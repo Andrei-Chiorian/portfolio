@@ -58,7 +58,7 @@ const About = () => {
                                     triggerOnce
                                 >
                                     <span>
-                                        Soy Desarrollador
+                                        Soy un Desarrollador
                                     </span>
                                 </Flip>
                                 <Fade
@@ -67,8 +67,8 @@ const About = () => {
                                     duration={800}
                                     triggerOnce
                                 >
-                                    <h3>
-                                        Puedo Escribir Código Tan Rápido Como Tú Cambias De Idea
+                                    <h3 className="titles">
+                                       Capaz de convertir café en código y errores en soluciones
                                     </h3>
                                 </Fade>
 
@@ -81,13 +81,15 @@ const About = () => {
                             >
                                 <div className="text">
                                     <p>
-                                        Me especializo en crear aplicaciones web que no solo funcionan, sino que también hacen sonreír. Trabajo principalmente con React y Python, entre otras tecnologías, para construir desde interfaces de usuario intuitivas que te enamoran, hasta backends robustos que soportan cualquier locura que se te ocurra.
+                                        Me especializo en crear <strong>aplicaciones web</strong> que no solo funcionan, sino que también hacen sonreír. Trabajo principalmente con <strong>React</strong> y <strong>Python</strong>, entre otras tecnologías, para construir desde <strong>interfaces de usuario intuitivas</strong> que te enamoran, hasta <strong>backends robustos</strong> que soportan cualquier locura que se te ocurra.
                                     </p>
+                                    <br />
                                     <p>
-                                        Si necesitas a alguien que pueda escribir código limpio, depurar errores con la misma calma con la que un ninja corta el aire, y que no se asuste ante una pila de tareas por hacer, estás en el lugar correcto.
+                                        Si necesitas a alguien que pueda escribir <strong>código limpio</strong>, <strong>depurar errores</strong> con la misma calma con la que un ninja corta el aire, y que no se asuste ante una pila de tareas por hacer, estás en el lugar correcto.
                                     </p>
+                                    <br />
                                     <p>
-                                        Cuando no estoy solucionando problemas complejos o creando funciones geniales, probablemente estoy añadiendo más café a mi taza o tratando de entender cómo se rompió algo que funcionaba hace cinco minutos.
+                                        Cuando no estoy <strong>solucionando problemas complejos</strong> o creando funciones geniales, probablemente estoy añadiendo más café a mi taza o tratando de entender cómo se rompió algo que funcionaba hace cinco minutos.
                                     </p>
 
                                 </div>

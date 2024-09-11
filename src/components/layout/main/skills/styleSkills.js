@@ -38,6 +38,10 @@ export const StylesSkills = styled.div`
         margin-bottom: 23px;
     }
 
+    .skills-main-title p {
+        color: ${({ theme }) => theme.text};
+    }
+
     .skills-list {
         width: 100%;
         height: auto;
@@ -87,6 +91,7 @@ export const StylesSkills = styled.div`
         align-items: center;
         gap: 30px;
         margin-bottom: 50px;
+        pointer-events: none;
     }
 
     .skills-list .list-inner .icon svg {
@@ -101,8 +106,7 @@ export const StylesSkills = styled.div`
     }
 
     .skills-list .title h3 {
-        font-size: 30px;
-        color: ${({ theme }) => theme.text};
+        font-size: 30px;       
     }
 
     .skills-list .text {

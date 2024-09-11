@@ -5,12 +5,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { HiClipboardDocumentList } from "react-icons/hi2";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { MdOutlineClose } from "react-icons/md";
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";
 import { IoMenu } from "react-icons/io5";
-
-
+import { IoMdCloseCircle } from "react-icons/io";
 
 
 export const icon = {
@@ -21,7 +19,7 @@ export const icon = {
     linkedIn: FaLinkedinIn,
     clipboard: HiClipboardDocumentList,
     whatsApp: IoLogoWhatsapp,
-    iconCloseModal: MdOutlineClose,
+    iconCloseModal: IoMdCloseCircle,
     arrowDown: SlArrowDown,
     arrowUp: SlArrowUp,
     menu: IoMenu

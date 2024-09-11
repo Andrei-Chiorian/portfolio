@@ -18,7 +18,7 @@ const Testimonials = () => {
         <StylesTestimonials theme={currentTheme}>
             <div className="testi-main-title">
                 <span>Testimonios</span>
-                <h3>Lo que dicen de mi</h3>
+                <h3 className="titles">Lo que dicen de mi</h3>
                 <p>Opiniones de compañeros, clientes y mentores sobre mi trabajo</p>
 
             </div>
@@ -35,7 +35,7 @@ const Testimonials = () => {
                         >
                             <SwiperSlide>
                                 <div className="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enable-background="new 796 698 200 200" class="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enableBackground="new 796 698 200 200" className="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
                                 </div>
                                 <div className="text">
                                     <p className="readonly">
@@ -47,14 +47,14 @@ const Testimonials = () => {
                                         <div className="main" style={{ backgroundImage: ' url(/img/edu.jpeg)' }}></div>
                                     </div>
                                     <div className="detail">
-                                        <h3>Eduardo Neila</h3>
+                                        <h3 className="titles">Eduardo Neila</h3>
                                         <span>Desarrollador de software</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enable-background="new 796 698 200 200" class="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enableBackground="new 796 698 200 200" className="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
                                 </div>
                                 <div className="text">
                                     <p className="readonly">
@@ -66,14 +66,14 @@ const Testimonials = () => {
                                         <div className="main" style={{ backgroundImage: ' url(/img/jaime.png)' }}></div>
                                     </div>
                                     <div className="detail">
-                                        <h3>Jaime Martín</h3>
+                                        <h3 className="titles">Jaime Martín</h3>
                                         <span>Desarrollador de aplicaciones web</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enable-background="new 796 698 200 200" class="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enableBackground="new 796 698 200 200" className="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
                                 </div>
                                 <div className="text">
                                     <p className="readonly">
@@ -86,14 +86,14 @@ const Testimonials = () => {
                                         <div className="main" style={{ backgroundImage: ' url(/img/juanqui.png)' }}></div>
                                     </div>
                                     <div className="detail">
-                                        <h3>Juan Carlos Barriga</h3>
+                                        <h3 className="titles">Juan Carlos Barriga</h3>
                                         <span>Desarrollador de aplicaciones web</span>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enable-background="new 796 698 200 200" class="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" width="200px" height="200px" viewBox="796 698 200 200" enableBackground="new 796 698 200 200" className="svg replaced-svg"><g><path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26   C836.948,771.39,858.598,749.739,885.208,749.739z"></path><path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26   C947.74,771.39,969.39,749.739,996,749.739z"></path></g></svg>
                                 </div>
                                 <div className="text">
                                     <p className="readonly">
@@ -106,7 +106,7 @@ const Testimonials = () => {
                                         <div className="main" style={{ backgroundImage: ' url(/img/rober.png)' }}></div>
                                     </div>
                                     <div className="detail">
-                                        <h3>Roberto Berrendo </h3>
+                                        <h3 className="titles">Roberto Berrendo </h3>
                                         <span>Desarrollador web junior</span>
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@ const Testimonials = () => {
                         <span className="square border"></span>
                     </div>
                     <div className="right-details">
-                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
+                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random3.jpg)' }}>
 
                         </div>
                         <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.png)' }} onClick={() => goToSlide(1)}>

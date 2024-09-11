@@ -10,6 +10,11 @@ export const StylesHome = styled.div`
         float: left;
     }
 
+    strong {
+        font-weight: 700 !important;
+        color: #f75023;
+    }
+
     @media (max-width: 1080px) {
         .brush_1 {
             display: none;

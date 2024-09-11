@@ -29,7 +29,8 @@ function App() {
                 richColors 
                 expand={true}
                 toastOptions={{
-                    className: 'sonner-toast', // Aplicar la clase de CSS personalizada globalmente
+                    className: 'sonner-toast',
+                    duration: 1500,
                   }}
               
             />

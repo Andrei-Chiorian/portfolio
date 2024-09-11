@@ -20,8 +20,7 @@ export const StylesMenu = styled.div`
     & ul li a {
         text-decoration: none;
         font-size: 17px;
-        font-weight: 500;
-        color: ${(props) => props.theme.text} !important;
+        font-weight: 500;       
     }
 
     & ul li a.active-section {
@@ -45,8 +44,7 @@ export const StylesMenu = styled.div`
     .download-cv a span {
         position: relative;
         z-index: 2;
-        font-size: 18px;
-        color: ${(props) => props.theme.text};
+        font-size: 18px;        
     }
     .download-cv a::before {
         position: absolute;
