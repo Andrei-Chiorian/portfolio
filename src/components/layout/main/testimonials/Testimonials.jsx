@@ -4,7 +4,7 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { useState } from "react";
-
+import { icon } from '../../../../constants/icons.js'
 
 const Testimonials = () => {
     const currentTheme = useTheme().theme();
@@ -49,6 +49,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Eduardo Neila</h3>
                                         <span>Desarrollador de software</span>
+                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -68,6 +69,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Jaime Martín</h3>
                                         <span>Desarrollador de aplicaciones web</span>
+                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -88,6 +90,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Juan Carlos Barriga</h3>
                                         <span>Desarrollador de aplicaciones web</span>
+                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -108,6 +111,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Roberto Berrendo </h3>
                                         <span>Desarrollador web junior</span>
+                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>

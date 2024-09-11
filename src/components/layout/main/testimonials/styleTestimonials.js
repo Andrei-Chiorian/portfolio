@@ -3,6 +3,16 @@ import styled from "styled-components";
 export const StylesTestimonials = styled.div`
     position: relative;
 
+    .detail-icon {
+        padding: 5px 0px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .detail-icon svg{
+        color :lightgrey;
+    }
+
     .testi-main-title {
         width: 100%;
         height: auto;
@@ -54,7 +64,7 @@ export const StylesTestimonials = styled.div`
 
     .list-wrapper .total .in {
         width: 100%;
-        max-width: 1300px;
+        max-width: 1100px;
         text-align: center;
         margin: 0 auto;
     }
@@ -87,7 +97,7 @@ export const StylesTestimonials = styled.div`
     }
 
     .in .text p {
-        font-size: 25px;
+        font-size: 22px;
         font-style: italic;
         line-height: 1.6;
         color: ${({ theme }) => theme.text};
@@ -103,8 +113,8 @@ export const StylesTestimonials = styled.div`
 
     .in .short .image {
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border-radius: 8px;
     }
 
@@ -118,6 +128,8 @@ export const StylesTestimonials = styled.div`
         background-size: cover;
         background-position: 50%;
         border-radius: 8px;
+        width: 100%;
+        height: 100%;
     }
 
     .in .detail {
@@ -371,8 +383,8 @@ export const StylesTestimonials = styled.div`
         }
 
         .in .short .image {
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
         }
 
         .total .left-details .det-image.two {

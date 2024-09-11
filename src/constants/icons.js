@@ -9,7 +9,7 @@ import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";
 import { IoMenu } from "react-icons/io5";
 import { IoMdCloseCircle } from "react-icons/io";
-
+import { FaLinkedin } from "react-icons/fa";
 
 export const icon = {
     location: FaLocationDot ,
@@ -22,5 +22,6 @@ export const icon = {
     iconCloseModal: IoMdCloseCircle,
     arrowDown: SlArrowDown,
     arrowUp: SlArrowUp,
-    menu: IoMenu
+    menu: IoMenu,
+    linkedInSmall: FaLinkedin
 }
