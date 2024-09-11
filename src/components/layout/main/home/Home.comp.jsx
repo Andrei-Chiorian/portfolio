@@ -6,7 +6,7 @@ import Atom from "./atom/Atom.jsx";
 
 const HomeComp = () => {
     const currentTheme = useTheme().theme();
-    
+
     return (
         <StylesHomeComp theme={currentTheme}>
             <div className="background">
@@ -35,10 +35,14 @@ const HomeComp = () => {
                             </p>
 
                         </div>
-                        <div className="button"></div>
+                        <div className="button">
+                            <a className="anchor" href="#about">
+                                <span>Sobre mi</span>
+                            </a>
+                        </div>
                     </div>
                     <div className="avatar">
-                        <Atom/>
+                        <Atom />
                     </div>
 
                 </div>

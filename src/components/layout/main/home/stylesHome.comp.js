@@ -110,6 +110,46 @@ export const StylesHomeComp = styled.div`
         letter-spacing: 0.7px;
     }
 
+    .button {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+    }
+    .button a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        border-radius: 50px;
+        border: 2px solid #f75023;
+        padding: 14px 48px 13px 48px;
+        position: relative;
+        overflow: hidden;
+    }
+    .button a:before {
+        position: absolute;
+        content: "";
+        z-index: 0;
+        background-color: #f75023;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        height: 120%;
+        transition: all 0.3s ease;
+    }
+
+    .button a:hover::before {
+        height: 0%;
+    }
+
+    .button span {
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
+    }
+
     .avatar {
         width: fit-content;
         height: fit-content;
@@ -206,6 +246,8 @@ export const StylesHomeComp = styled.div`
         margin: auto;
         z-index: 4;
     }
+
+    
 
     @-webkit-keyframes electronAnimation {
         0% {

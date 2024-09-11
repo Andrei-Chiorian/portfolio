@@ -41,9 +41,7 @@ const MobileMenu = () => {
                     <ul className="anchor_nav">
                         <li className="menu-item"><a href="#home" className={activeSection === 'home' ? 'active-section' : ''}>Home</a></li>
                         <li className="menu-item"><a href="#about" className={activeSection === 'about' ? 'active-section' : ''}>Sobre mi</a></li>
-                        <li className="menu-item"><a href="#projects" className={activeSection === 'projects' ? 'active-section' : ''}>Proyectos</a></li>
-                        <li className="menu-item"><a href="#education" className={activeSection === 'education' ? 'active-section' : ''}>Formación</a></li>
-                        <li className="menu-item"><a href="#experience" className={activeSection === 'experience' ? 'active-section' : ''}>Experiencia</a></li>
+                        <li className="menu-item"><a href="#projects" className={activeSection === 'projects' ? 'active-section' : ''}>Proyectos</a></li>                       
                         <li className="menu-item"><a href="#skills" className={activeSection === 'skills' ? 'active-section' : ''}>Habilidades</a></li>
                         <li className="menu-item"><a href="#testimonials" className={activeSection === 'testimonials' ? 'active-section' : ''}>Testimonios</a></li>
                         <li className="download-cv">

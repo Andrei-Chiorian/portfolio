@@ -54,7 +54,7 @@ export const StylesTestimonials = styled.div`
 
     .list-wrapper .total .in {
         width: 100%;
-        max-width: 900px;
+        max-width: 1300px;
         text-align: center;
         margin: 0 auto;
     }
@@ -87,7 +87,7 @@ export const StylesTestimonials = styled.div`
     }
 
     .in .text p {
-        font-size: 30px;
+        font-size: 25px;
         font-style: italic;
         line-height: 1.6;
         color: ${({ theme }) => theme.text};
@@ -172,20 +172,176 @@ export const StylesTestimonials = styled.div`
         max-width: 100%;
     }
 
-    .swiper {
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
-        padding: 0 20px;
+    & .brush_2 {
+        position: absolute;
+        bottom: -850px;
+        left: 0px;        
+    }
+
+    & .brush_2 img {
+        vertical-align: middle;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        max-width: 100%;
+    }
+
+    .total .left-details {
+        position: absolute;
+        top: 50%;
+        left: 45px;
+        transform: translateY(-50%);
+        margin-top: -10px;
+    }
+
+    .total .left-details .det-image {
+        position: absolute;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        visibility: visible;
+    }
+
+    .total .left-details .det-image.one {
+        width: 55px;
+        height: 55px;
+    }
+
+    .total .left-details .det-image.two {
+        width: 70px;
+        height: 70px;
+        top: -217px;
+        left: 133px;
+    }
+
+    .total .left-details .det-image.three {
+        width: 60px;
+        height: 60px;
+        top: -60px;
+        left: 255px;
+        cursor: pointer;
+    }
+
+    .total .left-details .det-image.four {
+        width: 35px;
+        height: 35px;
+        left: 260px;
+        bottom: -153px;
+        cursor: pointer;
+    }
+
+    .total .left-details .square {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        border-radius: 6px;
+    }
+
+    .total .left-details .square.green {
+        background-color: #1cbe59;
+        top: -108px;
+        left: 55px;
+    }
+
+    .total .left-details .square.yellow {
+        background-color: #f0c45c;
+        left: 148px;
+        bottom: -42px;
+    }
+
+    .total .left-details .border {
+        border: 4px solid #6e50f0;
+        width: 30px;
+        height: 30px;
+        top: -152px;
+        left: 300px;
+    }
+
+    .total .right-details {
+        position: absolute;
+        top: 50%;
+        right: 85px;
+        transform: translateY(-50%);
+        margin-top: -50px;
+    }
+
+    .total .right-details .det-image {
+        position: absolute;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .total .right-details .det-image.one {
+        width: 49px;
+        height: 49px;
+    }
+
+    .total .right-details .det-image.two {
+        width: 79px;
+        height: 79px;
+        bottom: -100px;
+        right: 225px;
+        cursor: pointer;
+    }
+
+    .total .right-details .det-image.three {
+        width: 58px;
+        height: 58px;
+        top: -162px;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .total .right-details .square {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        border-radius: 6px;
+    }
+
+    .total .right-details .square.yellow {
+        background-color: #f0c45c;
+        top: -173px;
+        right: 263px;
+    }
+
+    .total .right-details .square.purple {
+        background-color: #8067f0;
+        bottom: -180px;
+        right: 38px;
+    }
+
+    .total .right-details .border {
+        border: 6px solid #1cbe59;
+        width: 54px;
+        height: 54px;
+        right: 109px;
+        top: -13px;
     }
 
     @media (max-width: 1080px) {
         .swiper {
             padding: 0 20px;
+        }
+
+        .total .right-details {
+            display: none;
+        }
+
+        .total .left-details {
+            display: none;
+        }
+
+        .testi-main-title {
+            padding: 0 20px;
+        }
+
+        .in .text p {
+            font-size: 20px;
         }
     }
 
@@ -208,7 +364,7 @@ export const StylesTestimonials = styled.div`
         }
 
         .list-wrapper .total .in {
-            max-width: 600px;
+            max-width: 800px;
         }
 
         .in .detail h3 {
@@ -218,6 +374,32 @@ export const StylesTestimonials = styled.div`
         .in .short .image {
             width: 70px;
             height: 70px;
+        }
+
+        .total .left-details .det-image.two {
+            left: 120px;
+        }
+
+        .total .left-details .det-image.three {
+            left: 200px;
+        }
+
+        .total .left-details .border {
+            left: 240px;
+        }
+
+        .total .right-details .det-image.two {
+            right: 170px;
+        }
+
+        .total .right-details .square.yellow {
+            right: 210px;
+            width: 55px;
+            height: 55px;
+        }
+
+        .total .right-details .square {
+            right: 68px;
         }
     }
 `;

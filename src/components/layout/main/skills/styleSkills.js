@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StylesSkills = styled.div`
     position: relative;
-   
 
     .container {
         max-width: 1400px;
@@ -12,7 +11,7 @@ export const StylesSkills = styled.div`
         height: auto;
         padding: 0 40px;
         position: relative;
-        clear: both;        
+        clear: both;
     }
 
     .skills-main-title {
@@ -115,13 +114,55 @@ export const StylesSkills = styled.div`
     .brush_1 {
         position: absolute;
         top: 300px;
-        left: 0;        
+        left: 0;
     }
 
     .brush_2 {
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .button {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        text-align: center;
+    }
+    
+    .button a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+        border-radius: 50px;
+        border: 2px solid #f75023;
+        padding: 14px 48px 13px 48px;
+        position: relative;
+        overflow: hidden;
+    }
+    .button a:before {
+        position: absolute;
+        content: "";
+        z-index: 0;
+        background-color: #f75023;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        height: 120%;
+        transition: all 0.3s ease;
+    }
+
+    .button a:hover::before {
+        height: 0%;
+    }
+
+    .button span {
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
     }
 
     @media (max-width: 768px) {

@@ -163,8 +163,14 @@ const Skills = () => {
                             </div>
                         </li>
                     </ul>
+                    <div className="button">
+                        <a className="anchor" href="#contact">
+                            <span>¿Puedo encajar en tu proyecto?</span>
+                        </a>
+                    </div>
                 </div>
-            </div>            
+            </div>
+
             <div className="brush_1">
                 <Fade
                     direction="left"

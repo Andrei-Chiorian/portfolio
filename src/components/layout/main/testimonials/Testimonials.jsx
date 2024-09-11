@@ -3,11 +3,16 @@ import { StylesTestimonials } from "./styleTestimonials";
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
+import { useState } from "react";
 
 
 const Testimonials = () => {
     const currentTheme = useTheme().theme();
+    const [swiperRef, setSwiperRef] = useState(null);
 
+    const goToSlide = (index) => {
+        if (swiperRef) swiperRef.slideTo(index);
+    };
 
     return (
         <StylesTestimonials theme={currentTheme}>
@@ -21,6 +26,7 @@ const Testimonials = () => {
                 <div className="total">
                     <div className="in">
                         <Swiper
+                            onSwiper={setSwiperRef}
                             spaceBetween={50}
                             slidesPerView={1}
                             className="swiper"
@@ -107,16 +113,44 @@ const Testimonials = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div className="left_details">
+                    <div className="left-details">
+                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
 
+                        </div>
+                        <div className="det-image two" style={{ backgroundImage: 'url(/img/random2.jpg)' }}>
+
+                        </div>
+                        <div className="det-image three" style={{ backgroundImage: 'url(/img/edu.jpeg)' }} onClick={() => goToSlide(0)}>
+
+                        </div>
+                        <div className="det-image four" style={{ backgroundImage: 'url(/img/juanqui.png)' }} onClick={() => goToSlide(2)}>
+
+                        </div>
+                        <span className="square green"></span>
+                        <span className="square yellow"></span>
+                        <span className="square border"></span>
                     </div>
-                    <div className="right_details">
+                    <div className="right-details">
+                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
 
+                        </div>
+                        <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.png)' }} onClick={() => goToSlide(1)}>
+
+                        </div>
+                        <div className="det-image three" style={{ backgroundImage: 'url(/img/rober.png)' }} onClick={() => goToSlide(3)}>
+
+                        </div>
+                        <span className="square purple"></span>
+                        <span className="square yellow"></span>
+                        <span className="square border"></span>
                     </div>
                 </div>
             </div>
             <div className="brush_1">
                 <img src="/img/9.png" alt="" />
+            </div>
+            <div className="brush_2">
+                <img src="/img/10.png" alt="" />
             </div>
 
         </StylesTestimonials>

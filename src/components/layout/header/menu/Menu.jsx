@@ -3,52 +3,50 @@ import { useTheme } from "../../../../contexts/themeContext";
 import { StylesMenu } from "./stylesMenu";
 
 const Menu = () => {
-  const currentTheme = useTheme().theme();
-  const [activeSection, setActiveSection] = useState('');
+    const currentTheme = useTheme().theme();
+    const [activeSection, setActiveSection] = useState('');
 
-  
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    
-    const options = {
-      rootMargin: '0px',
-      threshold: 0.5
-    };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {         
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
+    useEffect(() => {
+        const sections = document.querySelectorAll('section');
+        console.log(sections)
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
 
-    sections.forEach(section => observer.observe(section));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, options);
 
-    return () => {
-      sections.forEach(section => observer.unobserve(section));
-    };
-  }, []);
+        sections.forEach(section => observer.observe(section));
 
-  return (
-    <StylesMenu theme={currentTheme}>
-      <ul>
-        <li><a href="#home" className={activeSection === 'home' ? 'active-section' : ''}>Home</a></li>
-        <li><a href="#about" className={activeSection === 'about' ? 'active-section' : ''}>Sobre mi</a></li>
-        <li><a href="#projects" className={activeSection === 'projects' ? 'active-section' : ''}>Proyectos</a></li>
-        <li><a href="#education" className={activeSection === 'education' ? 'active-section' : ''}>Formación</a></li>
-        <li><a href="#experience" className={activeSection === 'experience' ? 'active-section' : ''}>Experiencia</a></li>
-        <li><a href="#skills" className={activeSection === 'skills' ? 'active-section' : ''}>Habilidades</a></li>
-        <li><a href="#testimonials" className={activeSection === 'testimonials' ? 'active-section' : ''}>Testimonios</a></li>       
-        <li className="download-cv">
-          <a href="./doc/CV_Andrei-Chiorian.pdf" download>
-            <span>Descargar CV</span>
-          </a>
-        </li>
-      </ul>
-    </StylesMenu>
-  );
+        return () => {
+            sections.forEach(section => observer.unobserve(section));
+        };
+    }, []);
+
+    return (
+        <StylesMenu theme={currentTheme}>
+            <ul>
+                <li><a href="#home" className={activeSection === 'home' ? 'active-section' : ''}>Home</a></li>
+                <li><a href="#about" className={activeSection === 'about' ? 'active-section' : ''}>Sobre mi</a></li>
+                <li><a href="#projects" className={activeSection === 'projects' ? 'active-section' : ''}>Proyectos</a></li>
+                <li><a href="#skills" className={activeSection === 'skills' ? 'active-section' : ''}>Habilidades</a></li>
+                <li><a href="#testimonials" className={activeSection === 'testimonials' ? 'active-section' : ''}>Testimonios</a></li>
+                <li className="download-cv">
+                    <a href="./doc/CV_Andrei-Chiorian.pdf" download>
+                        <span>Descargar CV</span>
+                    </a>
+                </li>
+            </ul>
+        </StylesMenu>
+    );
 };
 
 export default Menu;

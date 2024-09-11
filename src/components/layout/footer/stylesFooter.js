@@ -9,7 +9,7 @@ export const StylesFooter = styled.div`
     -webkit-box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.8);
     -moz-box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.8);
     box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.8);
-    z-index: 2;
+    z-index: 4;
 
     div,
     span {
