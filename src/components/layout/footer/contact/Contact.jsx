@@ -50,11 +50,10 @@ const Contact = (props) => {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(e)
-        const formData = new FormData(e.target);
-        console.log(formData)
-
+        e.preventDefault();     
+        const form = e.target;
+        const formData = new FormData(form);
+        
         if (Object.values(matchData).every(value => value === true)) {
             
             fetch("/", {
