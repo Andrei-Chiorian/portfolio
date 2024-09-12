@@ -61,7 +61,7 @@ const Contact = (props) => {
                     if (response.ok) {
                         toast.success('Te respondere en breve');
                         form.reset();
-                        setFormData({
+                        setData({
                             email: '',
                             message: '',
                         });
@@ -85,7 +85,7 @@ const Contact = (props) => {
 
     return (
         <StylesContact theme={currentTheme}>
-            <form name="contact" method="POST" id="contact" onSubmit={handleSubmit}>
+            <form name="contact" method="POST" id="contact" onSubmit={handleSubmit} netlify>
                 <div className="footer-section-header">
                     <div className="title-container mobile-position-contact" onClick={() => changeState()}>
                         <div className="titles">
