@@ -49,7 +49,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Eduardo Neila</h3>
                                         <span>Desarrollador de software</span>
-                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
+                                        <a href="https://www.linkedin.com/in/eduardo-neila-calzado-9b7429208/" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -69,7 +69,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Jaime Martín</h3>
                                         <span>Desarrollador de aplicaciones web</span>
-                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
+                                        <a href="https://www.linkedin.com/in/juan-carlos-barriga-rey-9a7520273/" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -90,7 +90,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Juan Carlos Barriga</h3>
                                         <span>Desarrollador de aplicaciones web</span>
-                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
+                                        <a href="https://www.linkedin.com/in/jaime-mart%C3%ADn-moreno-3552a2161/" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -111,7 +111,7 @@ const Testimonials = () => {
                                     <div className="detail">
                                         <h3 className="titles">Roberto Berrendo </h3>
                                         <span>Desarrollador web junior</span>
-                                        <a href="https://www.linkedin.com/in/andrei-chiorian-web-development/details/recommendations/?detailScreenTabIndex=0" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
+                                        <a href="https://www.linkedin.com/in/roberto-berrendo-eguino-475b36171/" target="_blank" className="detail-icon"><icon.linkedInSmall size={18} id="linkedInSmall-icon" /></a>
                                     </div>
                                 </div>
                             </SwiperSlide>

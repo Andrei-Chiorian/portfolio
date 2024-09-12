@@ -352,7 +352,7 @@ export const StylesTestimonials = styled.div`
         }
 
         .in .text p {
-            font-size: 20px;
+            font-size: 16px !important;
         }
     }
 
