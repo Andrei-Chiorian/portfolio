@@ -53,9 +53,10 @@ const Contact = (props) => {
         e.preventDefault();
 
         if (Object.values(matchData).every(value => value === true)) {
+            const formData = new FormData(data);
             fetch("/", {
                 method: "POST",
-                body: data,
+                body: formData,
             })
                 .then(response => {
                     if (response.ok) {
