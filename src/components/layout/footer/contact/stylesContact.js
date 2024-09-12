@@ -23,7 +23,7 @@ export const StylesContact = styled.div`
     @media (max-width: 688px){
     .mobile-position-contact svg{
         position: absolute;
-        left: 153px;
+        left: 118px;
     }
   }
  

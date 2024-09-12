@@ -9,13 +9,12 @@ const Menu = () => {
 
 
     useEffect(() => {
-        const ids = ['home', 'about', 'projects', 'skills', 'testimonials'];
+        const ids = ['home', 'about', 'projects', 'skills', 'testimonials', 'contact'];
         const sections = ids.map(id => document.getElementById(id));
-
 
         const options = {
             rootMargin: '0px',
-            threshold: 0.3
+            threshold: 0.4
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -28,10 +27,20 @@ const Menu = () => {
 
         sections.forEach(section => observer.observe(section));
 
+        const handleScroll = () => {            
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                setActiveSection('contact');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
         return () => {
             sections.forEach(section => observer.unobserve(section));
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
 
     return (
         <StylesMenu theme={currentTheme}>

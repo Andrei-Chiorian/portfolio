@@ -118,7 +118,7 @@ export const StylesEndingText = styled.div`
     }
     .mobile-position-endingInfo svg{
       position: absolute;
-      left: 193px;
+      left: 130px;
     }
   }
 

@@ -62,7 +62,7 @@ export const StylesLocation = styled.div`
         }
         .mobile-position-location svg {
             position: absolute;
-            left: 155px;
+            left: 118px;
         }        
         & {
             justify-content: center;
