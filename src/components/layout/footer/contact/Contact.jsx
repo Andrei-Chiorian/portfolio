@@ -53,9 +53,7 @@ const Contact = (props) => {
         msg.match(MSG_REGEX) ? newMatchData.message = true : newMatchData.message = false
         setMatchData(newMatchData);
     }
-    useEffect(() => {
-        console.log(data)
-    }, [data])
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();

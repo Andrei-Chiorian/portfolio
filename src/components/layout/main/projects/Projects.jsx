@@ -51,7 +51,7 @@ const Projects = () => {
                             <figure className={`c1-1 ${isHovered1 ? 'hover-effect' : ''} ${groupSelected == 'all' || groupSelected == 'react' || groupSelected == 'python' ? '' : 'figure-not-visible'}`}>
                                 <img src={meImg1} alt="Imagen Sphere" />
                                 <div className="capa">
-                                    <a href="https://github.com/Andrei-Chiorian/cloudLib" target="_blank">
+                                    <a href="#" target="_blank">
                                         <h3 className="text-center">Sphere</h3>
                                         <p>Sphere es un proyecto creado desde cero para Sport Innovation Academy. Se trata de una aplicación web para la gestión de clubes deportivos y asociaciones. Mi papel en este proyecto abarcó desde el estudio de los requisitos y el planteamiento del funcionamiento de la aplicación, hasta el diseño de la base de datos y el desarrollo completo. Trabajamos siguiendo una metodología ágil, organizando el trabajo en sprints de dos semanas mediante Jira. La aplicación cuenta con un frontend desarrollado en React.js y una API REST construida con Python y Flask. Para la gestión de datos, utilizamos MySQL como base de datos.</p>
                                         <span>Pulsa otra vez</span>

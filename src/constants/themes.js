@@ -47,7 +47,7 @@ export const Dark = {
     titles: 'white',
 
     //Input
-    inputLabels: '#1A2653', //Label background
+    inputLabels: '#1D1C4C', //Label background
     inputLabelsColor: '#bdbdbd',  // Label text color
     inputColor: '', // Inputs text color
 
