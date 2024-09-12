@@ -63,7 +63,7 @@ const Contact = (props) => {
                 .then(response => {
                     if (response.ok) {
                         toast.success('Te respondere en breve');
-                        form.reset();
+                        // form.reset();
                         setData({
                             email: '',
                             message: '',
