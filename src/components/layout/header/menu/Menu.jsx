@@ -27,7 +27,7 @@ const Menu = () => {
 
         sections.forEach(section => observer.observe(section));
 
-        const handleScroll = () => {            
+        const handleScroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
                 setActiveSection('contact');
             }
@@ -40,6 +40,16 @@ const Menu = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const inputField = document.querySelector('#email');
+        setTimeout(() => {
+            if (activeSection === 'contact' && inputField) {
+                inputField.focus();
+                console.log(inputField)
+            }
+        }, 700);
+    }, [activeSection]);
 
 
     return (

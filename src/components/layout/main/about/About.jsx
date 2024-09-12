@@ -1,4 +1,4 @@
-import { Fade, Flip, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 import { useTheme } from "../../../../contexts/themeContext";
 import { StylesAbout } from "./styleAbout";
 import { useMemo } from "react";

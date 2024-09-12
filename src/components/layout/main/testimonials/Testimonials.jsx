@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 import { useState } from "react";
 import { icon } from '../../../../constants/icons.js'
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const Testimonials = () => {
     const currentTheme = useTheme().theme();
@@ -118,32 +119,58 @@ const Testimonials = () => {
                         </Swiper>
                     </div>
                     <div className="left-details">
-                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
+                        <AttentionSeeker effect="jello" triggerOnce>
+                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
 
-                        </div>
-                        <div className="det-image two" style={{ backgroundImage: 'url(/img/random2.jpg)' }}>
+                            </div>
+                        </AttentionSeeker>
 
-                        </div>
-                        <div className="det-image three" style={{ backgroundImage: 'url(/img/edu.jpeg)' }} onClick={() => goToSlide(0)}>
+                        <AttentionSeeker effect="jello" triggerOnce>
+                            <div className="det-image two" style={{ backgroundImage: 'url(/img/random2.jpg)' }}>
 
-                        </div>
-                        <div className="det-image four" style={{ backgroundImage: 'url(/img/juanqui.png)' }} onClick={() => goToSlide(2)}>
+                            </div>
+                        </AttentionSeeker>
 
-                        </div>
+
+                        <AttentionSeeker effect="tada" triggerOnce>
+                            <div className="det-image three" style={{ backgroundImage: 'url(/img/edu.jpeg)' }} onClick={() => goToSlide(0)}>
+
+                            </div>
+                        </AttentionSeeker>
+
+
+                        <AttentionSeeker effect="tada" triggerOnce>
+                            <div className="det-image four" style={{ backgroundImage: 'url(/img/juanqui.png)' }} onClick={() => goToSlide(2)}>
+
+                            </div>
+                        </AttentionSeeker>
+
                         <span className="square green"></span>
                         <span className="square yellow"></span>
                         <span className="square border"></span>
                     </div>
                     <div className="right-details">
-                        <div className="det-image one" style={{ backgroundImage: 'url(/img/random3.jpg)' }}>
+                        <AttentionSeeker effect="jello" triggerOnce>
+                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random3.jpg)' }}>
 
-                        </div>
-                        <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.png)' }} onClick={() => goToSlide(1)}>
+                            </div>
+                        </AttentionSeeker>
 
-                        </div>
-                        <div className="det-image three" style={{ backgroundImage: 'url(/img/rober.png)' }} onClick={() => goToSlide(3)}>
 
-                        </div>
+                        <AttentionSeeker effect="tada" triggerOnce>
+                            <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.png)' }} onClick={() => goToSlide(1)}>
+
+                            </div>
+                        </AttentionSeeker>
+
+
+                        <AttentionSeeker effect="tada" triggerOnce>
+                            <div className="det-image three" style={{ backgroundImage: 'url(/img/rober.png)' }} onClick={() => goToSlide(3)}>
+
+                            </div>
+                        </AttentionSeeker>
+
+
                         <span className="square purple"></span>
                         <span className="square yellow"></span>
                         <span className="square border"></span>

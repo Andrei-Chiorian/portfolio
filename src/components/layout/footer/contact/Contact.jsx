@@ -139,6 +139,7 @@ const Contact = (props) => {
                         placeholder="Minimo 10 caracteres"
                         reset={resetForm}
                     />
+                    
                     <button type="submit" className="success-button">
                         <span className="shadow"></span>
                         <span className="edge"></span>

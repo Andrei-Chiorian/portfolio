@@ -132,6 +132,7 @@ export const StylesProjects = styled.div`
         display: flex;
         flex-direction: column;
         gap: 30px;
+        height: 100%;
     }
 
     .projects-list figure {
