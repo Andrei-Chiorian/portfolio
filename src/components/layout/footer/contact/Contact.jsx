@@ -56,7 +56,7 @@ const Contact = (props) => {
         console.log(formData)
 
         if (Object.values(matchData).every(value => value === true)) {
-            const formData = new FormData(data);
+            
             fetch("/", {
                 method: "POST",
                 body: formData,
