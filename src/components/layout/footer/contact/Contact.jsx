@@ -51,6 +51,9 @@ const Contact = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(e)
+        const formData = new FormData(e.target);
+        console.log(formData)
 
         if (Object.values(matchData).every(value => value === true)) {
             const formData = new FormData(data);
@@ -86,7 +89,7 @@ const Contact = (props) => {
 
     return (
         <StylesContact theme={currentTheme}>
-            <form name="contact" method="POST" id="contact" onSubmit={handleSubmit} action="#" netlify>
+            <form name="contact" method="POST" id="contact" onSubmit={handleSubmit}>
                 <div className="footer-section-header">
                     <div className="title-container mobile-position-contact" onClick={() => changeState()}>
                         <div className="titles">
