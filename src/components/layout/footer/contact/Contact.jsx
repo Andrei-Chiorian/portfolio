@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "../../../../contexts/themeContext";
 import FormInput from "../../../global/formInput/FormInput";
 import TextAreaInput from "../../../global/textAreaInput/TextAreaInput";
@@ -23,6 +23,8 @@ const Contact = (props) => {
         message: false,
     })
 
+    const [resetForm, setResetForm] = useState(false)
+
     const changeState = () => {
         props.setShowInfoEnding(false)
         props.setShowInfoLocation(false)
@@ -30,6 +32,7 @@ const Contact = (props) => {
     }
 
     const handleChangeEmail = (email) => {
+        setResetForm(false)
         const newData = { ...data };
         newData.email = email;
         setData(newData);
@@ -40,22 +43,28 @@ const Contact = (props) => {
     }
 
     const handleChangeMsg = (msg) => {
+        setResetForm(false)
+        console.log(msg)
         const newData = { ...data };
-        newData.message = message;
+        newData.message = msg;
         setData(newData);
 
         const newMatchData = { ...matchData };
         msg.match(MSG_REGEX) ? newMatchData.message = true : newMatchData.message = false
         setMatchData(newMatchData);
     }
+    useEffect(() => {
+        console.log(data)
+    }, [data])
 
     const handleSubmit = (e) => {
-        e.preventDefault();     
+        e.preventDefault();
         const form = e.target;
-        const formData = new FormData(form);
+        const formData = new FormData(form);        
+
         
         if (Object.values(matchData).every(value => value === true)) {
-            
+
             fetch("/", {
                 method: "POST",
                 body: formData,
@@ -63,11 +72,11 @@ const Contact = (props) => {
                 .then(response => {
                     if (response.ok) {
                         toast.success('Te respondere en breve');
-                        // form.reset();
                         setData({
                             email: '',
                             message: '',
                         });
+                        setResetForm(true)
                     } else {
                         toast.error('Hubo un error al enviar mensaje');
                     }
@@ -114,6 +123,7 @@ const Contact = (props) => {
                         inputClass={'footer-contact-inputs'}
                         containerStyles={{ marginTop: '6px' }}
                         match={matchData.email}
+                        reset={resetForm}
                     />
                     <TextAreaInput
                         key={'input-contact-msg'}
@@ -129,6 +139,7 @@ const Contact = (props) => {
                         inputClass={'footer-contact-inputs'}
                         match={matchData.message}
                         placeholder="Minimo 10 caracteres"
+                        reset={resetForm}
                     />
                     <button type="submit" className="success-button">
                         <span className="shadow"></span>

@@ -113,10 +113,14 @@ function FormInput({ id, width, margin, background, labelColor, inputClass, cont
     useEffect(() => {               
         if (inputRef?.current?.value?.length > 0) {
             setHasValue(true)
+        }else {
+            setHasValue(false)
         }
         if (checkInputRef?.current?.value?.length > 0) {
             setHasConfirmValue(true)
-        }               
+        }  else {
+            setHasConfirmValue(false)
+        }             
     }, [inputRef, checkInputRef])
 
 

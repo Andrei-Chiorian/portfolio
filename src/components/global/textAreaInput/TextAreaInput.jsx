@@ -57,12 +57,15 @@ function TextAreaInput(props) {
     useEffect(() => {               
         if (textAreaRef?.current?.value?.length > 0) {
             setHasValue(true)
+        }else {
+            setHasValue(false)
         }
                      
     }, [textAreaRef])
 
 
-    const handleHasValue = (value) => {             
+    const handleHasValue = (value) => { 
+        console.log(value)            
         return value.length > 0 ? setHasValue(true) : setHasValue(false);
     }
  
@@ -74,10 +77,7 @@ function TextAreaInput(props) {
         }
     }, [props.reset])
 
-    useEffect(()=> {
-       console.log(textAreaRef)
-    }, [textAreaRef])
-
+   
     
     return (
         <StylesTextAreaInput theme={currentTheme}>
