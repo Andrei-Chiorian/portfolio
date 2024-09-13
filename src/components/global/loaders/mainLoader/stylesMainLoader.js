@@ -1,127 +1,127 @@
 import styled from "styled-components";
 
 export const StylesMainLoader = styled.div`
-  background: rgb(30, 27, 72);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(30, 27, 72, 1) 32%,
-    rgba(48, 48, 48, 1) 100%,
-    rgba(12, 74, 110, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(30, 27, 72, 1) 32%,
-    rgba(48, 48, 48, 1) 100%,
-    rgba(12, 74, 110, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(30, 27, 72, 1) 32%,
-    rgba(48, 48, 48, 1) 100%,
-    rgba(12, 74, 110, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1b48",endColorstr="#0c4a6e",GradientType=1);
-  
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .name-text-loader {
-    text-align: center;
-  }
-
-  .absolute {
-    position: absolute;
-  }
-
-  .inline-block {
-    display: inline-block;
-  }
-
-  .loader {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     width: 100vw;
-  }
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(18, 16, 48);   
+    overflow: hidden;
+    z-index: 9999;
+    
 
-  .w-2 {
-    width: 0.5em;
-  }
-
-  .dash {
-    animation: dashArray 1.2s ease-in-out, dashOffset 1.2s linear;
-  }
-
-  .spin {
-    animation: spinDashArray 1ms.2 ease-in-out infinite,
-      spin 8s ease-in-out infinite, dashOffset 2.5s linear infinite;
-    transform-origin: center;
-  }
-
-  @keyframes dashArray {
-    0% {
-      stroke-dasharray: 0 1 359 0;
+    .loader {
+        --size: 1300px;
+        --duration: 2s;
+        --logo-color: #b83110;
+        --background: linear-gradient(
+            0deg,
+            rgba(30, 27, 72, 0.5) 0%,
+            rgba(30, 27, 72, 0.3) 50%
+        );
+        height: var(--size);
+        aspect-ratio: 1;
+        position: relative;
     }
 
-    50% {
-      stroke-dasharray: 0 359 1 0;
+    .loader .box {
+        position: absolute;
+        background: rgba(30, 27, 72, 0.3);
+        background: var(--background);
+        border-radius: 50%;
+        border-top: 1px solid rgba(100, 100, 100, 1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+        backdrop-filter: blur(5px);
+        animation: ripple var(--duration) ease-in-out;
     }
 
-    100% {
-      stroke-dasharray: 359 1 0 0;
-    }
-  }
-
-  @keyframes spinDashArray {
-    0% {
-      stroke-dasharray: 270 90;
+    .loader .box:nth-child(1) {
+        inset: 40%;
+        z-index: 99;
     }
 
-    50% {
-      stroke-dasharray: 0 360;
+    .loader .box:nth-child(2) {
+        inset: 30%;
+        z-index: 98;
+        border-color: rgba(100, 100, 100, 0.5);
+        animation-delay: 0.2s;
     }
 
-    100% {
-      stroke-dasharray: 250 90;
-    }
-  }
-
-  @keyframes dashOffset {
-    0% {
-      stroke-dashoffset: 385;
+    .loader .box:nth-child(3) {
+        inset: 20%;
+        z-index: 97;
+        border-color: rgba(100, 100, 100, 0.3);
+        animation-delay: 0.4s;
     }
 
-    100% {
-      stroke-dashoffset: 5;
-    }
-  }
-
-  @keyframes spin {
-    0% {
-      rotate: 0deg;
+    .loader .box:nth-child(4) {
+        inset: 10%;
+        z-index: 96;
+        border-color: rgba(100, 100, 100, 0.2);
+        animation-delay: 0.6s;
     }
 
-    12.5%,
-    25% {
-      rotate: 270deg;
+    .loader .box:nth-child(5) {
+        inset: 0%;
+        z-index: 95;
+        border-color: rgba(100, 100, 100, 0.1);
+        animation-delay: 0.8s;
     }
 
-    37.5%,
-    50% {
-      rotate: 540deg;
+    .loader .logo {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        padding: 10%;
     }
 
-    62.5%,
-    75% {
-      rotate: 810deg;
+    .loader .logo svg {
+        fill: var(--logo-color);
+        width: 100%;
+        animation: color-change var(--duration) infinite ease-in-out;
     }
 
-    87.5%,
-    100% {
-      rotate: 1080deg;
+    @keyframes ripple {
+        0% {
+            transform: scale(1);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+        }
+        50% {
+            transform: scale(1.3);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px -0px;
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+        }
     }
-  }
+
+    @keyframes color-change {
+        0% {
+            fill: var(--logo-color);
+        }
+        50% {
+            fill: white;
+        }
+        100% {
+            fill: var(--logo-color);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .loader {
+            --size: 800px;
+        }
+    }
+
+
+    @media (min-width: 1600px) {
+        .loader {
+            --size: 1500px;
+        }
+    } 
+
+   
 `;
