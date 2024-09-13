@@ -9,7 +9,7 @@ export const StylesContact = styled.div`
         display: flex;
         flex-direction: column;
         gap: 14px;
-        overflow-y: hidden;
+      
     }
 
     .contact-inputs-container button{

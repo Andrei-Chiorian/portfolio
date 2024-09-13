@@ -7,7 +7,7 @@ import { StylesContact } from "./stylesContact";
 import { icon } from '../../../../constants/icons'
 import { EMAIL_REGEX, MSG_REGEX } from "../../../../constants/regex";
 import { toast } from 'sonner'
-
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const Contact = (props) => {
 
@@ -139,14 +139,15 @@ const Contact = (props) => {
                         placeholder="Minimo 10 caracteres"
                         reset={resetForm}
                     />
-                    
-                    <button type="submit" className="success-button">
-                        <span className="shadow"></span>
-                        <span className="edge"></span>
-                        <span className="front">
-                            Enviar mensaje
-                        </span>
-                    </button>
+                     <AttentionSeeker effect="tada" style={{width: '100%'}}>
+                        <button type="submit" className="success-button">
+                            <span className="shadow"></span>
+                            <span className="edge"></span>
+                            <span className="front titles">
+                                Enviar mensaje
+                            </span>
+                        </button>
+                    </AttentionSeeker>                    
                 </div>
             </form>
 

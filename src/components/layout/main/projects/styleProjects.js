@@ -195,6 +195,11 @@ export const StylesProjects = styled.div`
         margin: auto;
     }
 
+    .projects-list figure .capa span {
+        color: #f75023;
+        font-weight: 900;
+    }
+
     @media (min-width: 1040px) {
         .flex-container {
             height: 800px;

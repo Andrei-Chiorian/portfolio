@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     --buttonEdge4: ${(props) => props.theme.buttonEdge4};
 }
 
-html {
+html body{
   scrollbar-width: thin;
   scroll-behavior: smooth;
   max-width: 100vw !important;
@@ -124,6 +124,8 @@ a{
   outline-color: deeppink;
   transition: filter 250ms;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  
 }
 
 .shadow {
