@@ -9,12 +9,14 @@ export const GlobalStyle = createGlobalStyle`
     --buttonEdge4: ${(props) => props.theme.buttonEdge4};
 }
 
-html body{
+html, body{
   scrollbar-width: thin;
   scroll-behavior: smooth;
   max-width: 100vw !important;
   overflow-x: hidden;
 }
+
+
 
 *{
     margin: 0;
