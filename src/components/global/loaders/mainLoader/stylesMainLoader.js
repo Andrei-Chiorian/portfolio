@@ -6,19 +6,23 @@ export const StylesMainLoader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(18, 16, 48);   
+    background: #051F2F;   
     overflow: hidden;
     z-index: 9999;
     
-
+    video {
+        height: 125vh;
+        width:  125vw;
+        filter: brightness(1.2) contrast(1.5) saturate(1.2) blur(2px);
+    }
     .loader {
         --size: 1300px;
         --duration: 2s;
         --logo-color: #b83110;
         --background: linear-gradient(
             0deg,
-            rgba(30, 27, 72, 0.5) 0%,
-            rgba(30, 27, 72, 0.3) 50%
+            #0B2C41 0%,
+            #051F2F 50%
         );
         height: var(--size);
         aspect-ratio: 1;
@@ -77,7 +81,7 @@ export const StylesMainLoader = styled.div`
         padding: 10%;
     }
 
-    .loader .logo svg {
+    .loader .logo img {
         fill: var(--logo-color);
         width: 100%;
         animation: color-change var(--duration) infinite ease-in-out;

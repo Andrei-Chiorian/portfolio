@@ -20,8 +20,9 @@ const Home = () => {
 
     return (
         <StylesHome>
+
             <section className="home-section" id="home">
-                <HomeComp />
+                <HomeComp />               
             </section>
 
             <section className="process-section" id="process">
@@ -33,15 +34,15 @@ const Home = () => {
             </section>
 
             <section>
-               <Projects/>
+                <Projects />
             </section>
 
             <section>
-                <Skills/>              
+                <Skills />
             </section>
-            
+
             <section id="testimonials">
-                <Testimonials/>  
+                <Testimonials />
             </section>
 
 

@@ -89,7 +89,8 @@ export const StylesHomeComp = styled.div`
         margin-bottom: 35px;
     }
 
-    .job span {
+    .job h1 {
+        display: inline;
         font-size: 18px !important;
     }
 

@@ -24,7 +24,7 @@ const HomeComp = () => {
                         <div className="job">
                             <p className="titles">
                                 Un
-                                <span className="greenText"> Full Stack Developer </span>
+                                <h1 className="greenText"> Full Stack Developer </h1>
                                 De
                                 <span className="purpleText"> Madrid</span>
                             </p>

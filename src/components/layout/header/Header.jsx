@@ -27,7 +27,8 @@ const Header = () => {
                     <div className="header-items">
                         <div className="header-logo">
                             <a href="#">
-                                <img src="./img/logo-new.png" alt="Logo" style={{height: '70px'}}/>                              
+                                <img src="./img/logo-new.png" alt="Logo" style={{height: '70px'}}/> 
+                                                             
                             </a>
                         </div>
                         <div className="header-menu">
