@@ -45,7 +45,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className="short">
                                     <div className="image">
-                                        <div className="main" style={{ backgroundImage: ' url(/img/edu.jpeg)' }}></div>
+                                        <div className="main" style={{ backgroundImage: ' url(/img/edu.webp)' }}></div>
                                     </div>
                                     <div className="detail">
                                         <h3 className="titles">Eduardo Neila</h3>
@@ -65,7 +65,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className="short">
                                     <div className="image">
-                                        <div className="main" style={{ backgroundImage: ' url(/img/jaime.png)' }}></div>
+                                        <div className="main" style={{ backgroundImage: ' url(/img/jaime.webp)' }}></div>
                                     </div>
                                     <div className="detail">
                                         <h3 className="titles">Jaime Martín</h3>
@@ -86,7 +86,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className="short">
                                     <div className="image">
-                                        <div className="main" style={{ backgroundImage: ' url(/img/juanqui.png)' }}></div>
+                                        <div className="main" style={{ backgroundImage: ' url(/img/juanqui.webp)' }}></div>
                                     </div>
                                     <div className="detail">
                                         <h3 className="titles">Juan Carlos Barriga</h3>
@@ -107,7 +107,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className="short">
                                     <div className="image">
-                                        <div className="main" style={{ backgroundImage: ' url(/img/rober.png)' }}></div>
+                                        <div className="main" style={{ backgroundImage: ' url(/img/rober.webp)' }}></div>
                                     </div>
                                     <div className="detail">
                                         <h3 className="titles">Roberto Berrendo </h3>
@@ -120,27 +120,27 @@ const Testimonials = () => {
                     </div>
                     <div className="left-details">
                         <AttentionSeeker effect="jello" triggerOnce>
-                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random.jpg)' }}>
+                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random.webp)' }}>
 
                             </div>
                         </AttentionSeeker>
 
                         <AttentionSeeker effect="jello" triggerOnce>
-                            <div className="det-image two" style={{ backgroundImage: 'url(/img/random2.jpg)' }}>
+                            <div className="det-image two" style={{ backgroundImage: 'url(/img/random2.webp)' }}>
 
                             </div>
                         </AttentionSeeker>
 
 
                         <AttentionSeeker effect="tada" triggerOnce>
-                            <div className="det-image three" style={{ backgroundImage: 'url(/img/edu.jpeg)' }} onClick={() => goToSlide(0)}>
+                            <div className="det-image three" style={{ backgroundImage: 'url(/img/edu.webp)' }} onClick={() => goToSlide(0)}>
 
                             </div>
                         </AttentionSeeker>
 
 
                         <AttentionSeeker effect="tada" triggerOnce>
-                            <div className="det-image four" style={{ backgroundImage: 'url(/img/juanqui.png)' }} onClick={() => goToSlide(2)}>
+                            <div className="det-image four" style={{ backgroundImage: 'url(/img/juanqui.webp)' }} onClick={() => goToSlide(2)}>
 
                             </div>
                         </AttentionSeeker>
@@ -151,21 +151,21 @@ const Testimonials = () => {
                     </div>
                     <div className="right-details">
                         <AttentionSeeker effect="jello" triggerOnce>
-                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random3.jpg)' }}>
+                            <div className="det-image one" style={{ backgroundImage: 'url(/img/random3.webp)' }}>
 
                             </div>
                         </AttentionSeeker>
 
 
                         <AttentionSeeker effect="tada" triggerOnce>
-                            <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.png)' }} onClick={() => goToSlide(1)}>
+                            <div className="det-image two" style={{ backgroundImage: 'url(/img/jaime.webp)' }} onClick={() => goToSlide(1)}>
 
                             </div>
                         </AttentionSeeker>
 
 
                         <AttentionSeeker effect="tada" triggerOnce>
-                            <div className="det-image three" style={{ backgroundImage: 'url(/img/rober.png)' }} onClick={() => goToSlide(3)}>
+                            <div className="det-image three" style={{ backgroundImage: 'url(/img/rober.webp)' }} onClick={() => goToSlide(3)}>
 
                             </div>
                         </AttentionSeeker>
@@ -178,10 +178,10 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="brush_1">
-                <img src="/img/9.png" alt="" />
+                <img src="/img/9.webp" alt="" />
             </div>
             <div className="brush_2">
-                <img src="/img/10.png" alt="" />
+                <img src="/img/10.webp" alt="" />
             </div>
 
         </StylesTestimonials>

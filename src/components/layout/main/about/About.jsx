@@ -12,7 +12,7 @@ const About = () => {
     const yearsWorking = currentYear - 2022
     const yearsExperience = currentYear - 2020
     const currentTheme = useTheme().theme();
-    const meImg = useMemo(() => '/img/me.png', []);   
+    const meImg = useMemo(() => '/img/me.webp', []);   
 
     
     
@@ -118,12 +118,12 @@ const About = () => {
                         duration={1000}
                         triggerOnce
                     >
-                        <img src="/img/4.png" alt="decorator" />
+                        <img src="/img/4.webp" alt="decorator" />
                     </Fade>
                 </div>
 
                 <div className="brush_2">
-                    <img src="/img/13.png" alt="decorator" />
+                    <img src="/img/13.webp" alt="decorator" />
                 </div>
 
 

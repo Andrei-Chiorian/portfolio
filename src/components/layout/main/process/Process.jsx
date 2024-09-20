@@ -21,7 +21,7 @@ const Process = () => {
                                 <div className="list-inner">
                                     <div className="icon">
                                         <span>
-                                            <img className="brush" src="/img/3.png" alt="" />
+                                            <img className="brush" src="/img/3.webp" alt="" />
                                             <Idea />
                                         </span>
                                     </div>
@@ -47,7 +47,7 @@ const Process = () => {
                                 <div className="list-inner">
                                     <div className="icon">
                                         <span>
-                                            <img className="brush" src="/img/1.png" alt="" />
+                                            <img className="brush" src="/img/1.webp" alt="" />
                                             <Development />
                                         </span>
                                     </div>
@@ -74,7 +74,7 @@ const Process = () => {
                                 <div className="list-inner">
                                     <div className="icon">
                                         <span>
-                                            <img className="brush" src="/img/2.png" alt="" />
+                                            <img className="brush" src="/img/2.webp" alt="" />
                                             <Evaluation />
                                         </span>
                                     </div>

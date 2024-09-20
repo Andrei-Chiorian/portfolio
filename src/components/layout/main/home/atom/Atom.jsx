@@ -6,7 +6,7 @@ import { StylesAtom } from './stylesAtom';
 
 const Atom = () => {
     
-    const meImg = useMemo(() => '/img/avatar.png', []);   
+    const meImg = useMemo(() => '/img/avatar.webp', []);   
 
     return (
         <StylesAtom>

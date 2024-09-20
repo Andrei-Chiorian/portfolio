@@ -271,12 +271,12 @@ const Skills = () => {
                     duration={1000}
                     triggerOnce
                 >
-                    <img src="/img/8.png" alt="decorator" />
+                    <img src="/img/8.webp" alt="decorator" />
                 </Fade>
             </div>
 
             <div className="brush_2">
-                <img src="/img/7.png" alt="decorator" />
+                <img src="/img/7.webp" alt="decorator" />
             </div>
 
         </StylesSkills>

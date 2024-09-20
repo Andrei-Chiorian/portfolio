@@ -12,11 +12,11 @@ const Projects = () => {
     const [isHovered3, setIsHovered3] = useState(false);
 
     const meImg1 = useMemo(() => 'img/sia.jpeg', []);
-    const meImg2 = useMemo(() => 'img/mokshabook.png', []);
-    const meImg3 = useMemo(() => 'img/roommates.png', []);
-    const meImg4 = useMemo(() => 'img/shopping.png', []);
-    const meImg5 = useMemo(() => 'img/terrarium.jpg', []);
-    const meImg6 = useMemo(() => 'img/cloudlib.png', []);
+    const meImg2 = useMemo(() => 'img/mokshabook.webp', []);
+    const meImg3 = useMemo(() => 'img/roommates.webp', []);
+    const meImg4 = useMemo(() => 'img/shopping.webp', []);
+    const meImg5 = useMemo(() => 'img/terrarium.webp', []);
+    const meImg6 = useMemo(() => 'img/cloudlib.webp', []);
 
     const [groupSelected, setGroupSelected] = useState('all')
 
@@ -52,9 +52,9 @@ const Projects = () => {
                         >
                             <div className="c1">
                                 <figure className={`c1-1 ${isHovered1 ? 'hover-effect' : ''} ${groupSelected == 'all' || groupSelected == 'react' || groupSelected == 'python' ? '' : 'figure-not-visible'}`}>
-                                    <img src={meImg1} alt="Imagen Sphere" />
+                                    <img src={meImg1} alt="Imagen Sphere" height={300} width={300}/>
                                     <div className="capa">
-                                        <a href="#" target="_blank">
+                                        <a href="#">
                                             <h3 className="text-center">Sphere</h3>
                                             <p>Sphere es un proyecto creado desde cero para Sport Innovation Academy. Se trata de una aplicación web para la gestión de clubes deportivos y asociaciones. Mi papel en este proyecto abarcó desde el estudio de los requisitos y el planteamiento del funcionamiento de la aplicación, hasta el diseño de la base de datos y el desarrollo completo. Trabajamos siguiendo una metodología ágil, organizando el trabajo en sprints de dos semanas mediante Jira. La aplicación cuenta con un frontend desarrollado en React.js y una API REST construida con Python y Flask. Para la gestión de datos, utilizamos MySQL como base de datos.</p>                                            
                                         </a>
@@ -62,7 +62,7 @@ const Projects = () => {
                                 </figure>
 
                                 <figure className={`c1-2 ${groupSelected == 'all' || groupSelected == 'php' ? '' : 'figure-not-visible'}`} onMouseEnter={() => setIsHovered1(true)} onMouseLeave={() => setIsHovered1(false)}>
-                                    <img src={meImg2} alt="Imagen MokshaBook" />
+                                    <img src={meImg2} alt="Imagen MokshaBook" height={300} width={300}/>
                                     <div className="capa">
                                         <a href="https://github.com/Andrei-Chiorian/Mokshabook" target="_blank" >
                                             <h3>MokshaBook</h3>
@@ -83,7 +83,7 @@ const Projects = () => {
                         >
                             <div className="c2">
                                 <figure className={`c2-1 ${groupSelected == 'all' || groupSelected == 'reactNative' || groupSelected == 'python' ? '' : 'figure-not-visible'}`} onMouseEnter={() => setIsHovered2(true)} onMouseLeave={() => setIsHovered2(false)}>
-                                    <img src={meImg3} alt="Imagen RoomMates" />
+                                    <img src={meImg3} alt="Imagen RoomMates" height={300} width={300}/>
                                     <div className="capa">
                                         <a href="https://github.com/fumooworking" target="_blank">
                                             <h3>RoomMates</h3>
@@ -94,7 +94,7 @@ const Projects = () => {
                                 </figure>
 
                                 <figure className={`c2-2 ${isHovered2 ? 'hover-effect' : ''} ${groupSelected == 'all' || groupSelected == 'react' ? '' : 'figure-not-visible'}`}>
-                                    <img src={meImg4} alt="Imagen ShopppingCart" />
+                                    <img src={meImg4} alt="Imagen ShopppingCart" height={300} width={300}/>
                                     <div className="capa">
                                         <a href="https://github.com/Andrei-Chiorian/react-andrei" target="_blank" >
                                             <h3>ShopppingCart</h3>
@@ -114,7 +114,7 @@ const Projects = () => {
                         >
                             <div className="c3">
                                 <figure className={`c3-1 ${isHovered3 ? 'hover-effect' : ''} ${groupSelected == 'all' || groupSelected == 'arduino' ? '' : 'figure-not-visible'}`}>
-                                    <img src={meImg5} alt="Imagen Terrarium Control" />
+                                    <img src={meImg5} alt="Imagen Terrarium Control" height={150} width={300}/>
                                     <div className="capa">
                                         <a href="https://github.com/Andrei-Chiorian/terrarium_control" target="_blank" >
                                             <h3>Terrarium Control</h3>
@@ -125,7 +125,7 @@ const Projects = () => {
                                 </figure>
 
                                 <figure className={`c3-2 ${groupSelected == 'all' || groupSelected == 'php' ? '' : 'figure-not-visible'}`} onMouseEnter={() => setIsHovered3(true)} onMouseLeave={() => setIsHovered3(false)}>
-                                    <img src={meImg6} alt="Imagen CloudLib" />
+                                    <img src={meImg6} alt="Imagen CloudLib" height={300} width={300}/>
                                     <div className="capa">
                                         <a href="https://github.com/Andrei-Chiorian/cloudLib" target="_blank" >
                                             <h3>CloudLib</h3>
@@ -150,12 +150,12 @@ const Projects = () => {
                     duration={1000}
                     triggerOnce
                 >
-                    <img src="/img/5.png" alt="decorator" />
+                    <img src="/img/5.webp" alt="decorator" />
                 </Fade>
             </div>
 
             <div className="brush_2">
-                <img src="/img/6.png" alt="decorator" />
+                <img src="/img/6.webp" alt="decorator" />
             </div>
         </StylesProjects>
     )
