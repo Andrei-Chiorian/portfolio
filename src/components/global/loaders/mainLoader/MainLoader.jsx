@@ -12,16 +12,16 @@ const MainLoader = () => {
     
     return (
         <StylesMainLoader>
-            <div class="loader">
-                <div class="box">
-                    <div class="logo">
+            <div className="loader">
+                <div className="box">
+                    <div className="logo">
                         <img src="/img/loader.png" alt="loader-logo" />                     
                     </div>
                 </div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
 
             </div>
 

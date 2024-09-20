@@ -11,12 +11,14 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body{
   scrollbar-width: thin;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
   max-width: 100vw !important;
   overflow-x: hidden;
 }
 
-
+.hidden-scroll {
+  overflow-y: hidden !important;
+}
 
 *{
     margin: 0;

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StylesMainLoader = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,6 +13,7 @@ export const StylesMainLoader = styled.div`
     overflow: hidden;
     z-index: 9999;
     
+   
     video {
         height: 125vh;
         width:  125vw;

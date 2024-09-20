@@ -19,15 +19,15 @@ const HomeComp = () => {
                             <h3 className="orangeText">Hola, me llamo</h3>
                         </div>
                         <div className="name">
-                            <h3 className="titles">Andrei Chiorian</h3>
+                            <h1 className="titles">Andrei Chiorian</h1>
                         </div>
                         <div className="job">
-                            <p className="titles">
+                            <div className="titles">
                                 Un
-                                <h1 className="greenText"> Full Stack Developer </h1>
+                                <h3 className="greenText"> Full Stack Developer </h3>
                                 De
                                 <span className="purpleText"> Madrid</span>
-                            </p>
+                            </div>
                         </div>
                         <div className="text">
                             <p className="titles">

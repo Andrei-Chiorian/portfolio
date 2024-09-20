@@ -80,7 +80,7 @@ export const StylesHomeComp = styled.div`
         margin-bottom: 18px;
     }
 
-    .name h3 {
+    .name h1 {
         font-size: 85px;
         color: ${({ theme }) => theme.text};
     }
@@ -89,12 +89,12 @@ export const StylesHomeComp = styled.div`
         margin-bottom: 35px;
     }
 
-    .job h1 {
+    .job h3 {
         display: inline;
         font-size: 18px !important;
     }
 
-    .job p {       
+    .job div {       
         font-size: 17px !important;
         color: #000;
         font-weight: 500;

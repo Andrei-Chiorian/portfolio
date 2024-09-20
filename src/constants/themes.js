@@ -32,7 +32,6 @@ export const Light = {
     buttonEdge3: 'hsl(13, 75%, 20%)',
     buttonEdge4: 'hsl(13, 75%, 20%)',
 
-
 }
 
 export const Dark = {
@@ -70,4 +69,5 @@ export const Dark = {
     buttonEdge2: 'hsl(24, 81%, 43%)',
     buttonEdge3: 'hsl(24, 81%, 43%)',
     buttonEdge4: 'hsl(24, 81%, 34%)',
+
 }

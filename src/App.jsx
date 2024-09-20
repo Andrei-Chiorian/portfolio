@@ -7,7 +7,7 @@ import { GlobalStyle } from './styles/globalStyles';
 import { useTheme } from './contexts/themeContext';
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(true)    
     const currentTheme = useTheme().theme();
     
     useEffect(() => {
@@ -17,9 +17,10 @@ function App() {
     }, []);
 
     
-    if (isLoading) {
-        return  <MainLoader />;
-    }
+    useEffect(() => {       
+        const html = document.getElementsByTagName('html')[0]
+        isLoading ? html.classList.add('hidden-scroll') : html.classList.remove('hidden-scroll')           
+    }, [isLoading]);
 
 
     return (
@@ -34,8 +35,9 @@ function App() {
                   }}
               
             />
-             <GlobalStyle theme={currentTheme} />
-            <RouterProvider router={router} />              
+             <GlobalStyle theme={currentTheme}/>
+            <RouterProvider router={router} />
+          {isLoading &&  <MainLoader /> }        
         </>
 
     )
