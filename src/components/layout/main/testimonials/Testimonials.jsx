@@ -183,6 +183,7 @@ const Testimonials = () => {
             <div className="brush_2">
                 <img src="/img/10.webp" alt="" />
             </div>
+            
 
         </StylesTestimonials>
     )
